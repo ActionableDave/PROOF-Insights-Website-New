@@ -31,8 +31,19 @@ export default function MaxDiffScalingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-emerald-50 to-proof-blue-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative py-24"
+        style={{
+          backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/C5WC7QK0Ol5w7STB5zQtR/maxdiff-scaling.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-70"></div>
+        
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 hover:bg-proof-emerald-100">
               <Filter className="w-4 h-4 mr-1" />
@@ -42,7 +53,7 @@ export default function MaxDiffScalingPage() {
               Maximum Difference Scaling 
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-emerald-600 to-proof-blue-600 block leading-[1.2]">& Q-Sort</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Eliminate response bias and achieve precise importance rankings through advanced scaling 
               methodologies that reveal true customer priorities and decision drivers.
             </p>
@@ -471,8 +482,7 @@ export default function MaxDiffScalingPage() {
             Ready for Precision Ranking Insights?
           </h2>
           <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-            Partner with PROOF Insights to leverage MaxDiff methodologies that eliminate bias anddeliver precise, actionable importance rankings for strategic decision-making.
-          </p>
+            Partner with PROOF Insights to leverage MaxDiff methodologies that eliminate bias and deliver precise, actionable importance rankings for strategic decision-making.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
@@ -492,3 +502,4 @@ export default function MaxDiffScalingPage() {
     </div>
   );
 }
+
