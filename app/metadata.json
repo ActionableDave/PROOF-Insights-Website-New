@@ -1,0 +1,501 @@
+{
+  "/": {
+    "title": "PROOF Insights | Custom Market Research & Strategic Analytics",
+    "description": "Transform insights into strategic advantage with PROOF Insights. Custom-crafted market research solutions that unlock deep audience insights, drive product innovation, and accelerate business growth through evidence-based decision making.",
+    "keywords": "market research, strategic analytics, consumer insights, brand strategy, product innovation, conjoint analysis, customer experience, competitive intelligence",
+    "ogImage": "https://proofinsights.com/og-image-home.png"
+  },
+  "/about": {
+    "title": "About PROOF Insights | Expert Market Research Team Since 1989",
+    "description": "Meet the expert team behind PROOF Insights. With 35+ years of experience and 5000+ successful projects, we deliver custom market research solutions that drive real business results.",
+    "keywords": "market research experts, research team, business insights, strategic consulting, market analysis professionals",
+    "ogImage": "https://proofinsights.com/og-image-about.png"
+  },
+  "/about/team/andy-stacey": {
+    "title": "Andy Stacey | PROOF Insights Team",
+    "description": "Learn about Andy Stacey and his expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Andy Stacey, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/chase-wrinn": {
+    "title": "Chase Wrinn | PROOF Insights Team",
+    "description": "Learn about Chase Wrinn and his expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Chase Wrinn, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/david-cristofaro": {
+    "title": "David Cristofaro | PROOF Insights Team",
+    "description": "Learn about David Cristofaro and his expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "David Cristofaro, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/emily-yeagley": {
+    "title": "Emily Yeagley | PROOF Insights Team",
+    "description": "Learn about Emily Yeagley and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Emily Yeagley, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/jen-herrick": {
+    "title": "Jen Herrick | PROOF Insights Team",
+    "description": "Learn about Jen Herrick and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Jen Herrick, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/katie-crain": {
+    "title": "Katie Crain | PROOF Insights Team",
+    "description": "Learn about Katie Crain and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Katie Crain, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/matt-rodwick": {
+    "title": "Matt Rodwick | PROOF Insights Team",
+    "description": "Learn about Matt Rodwick and his expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Matt Rodwick, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/michael-lore": {
+    "title": "Michael Lore | PROOF Insights Team",
+    "description": "Learn about Michael Lore and his expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Michael Lore, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/sherrye-parr": {
+    "title": "Sherrye Parr | PROOF Insights Team",
+    "description": "Learn about Sherrye Parr and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Sherrye Parr, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/stacey-wachter": {
+    "title": "Stacey Wachter | PROOF Insights Team",
+    "description": "Learn about Stacey Wachter and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Stacey Wachter, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/tatiana-dockendorf": {
+    "title": "Tatiana Dockendorf | PROOF Insights Team",
+    "description": "Learn about Tatiana Dockendorf and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Tatiana Dockendorf, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/about/team/taylor-grant": {
+    "title": "Taylor Grant | PROOF Insights Team",
+    "description": "Learn about Taylor Grant and her expertise in market research and strategic analytics at PROOF Insights.",
+    "keywords": "Taylor Grant, market research expert, PROOF Insights team member",
+    "ogImage": "https://proofinsights.com/og-image-team.png"
+  },
+  "/contact": {
+    "title": "Contact PROOF Insights | Schedule Your Market Research Consultation",
+    "description": "Ready to transform your research strategy? Contact PROOF Insights for expert market research consultation. Get quick response within 24 hours from our proven team of research professionals.",
+    "keywords": "contact market research, research consultation, business insights consultation, market analysis contact",
+    "ogImage": "https://proofinsights.com/og-image-contact.png"
+  },
+  "/solutions": {
+    "title": "Market Research Solutions | PROOF Insights Strategic Services",
+    "description": "Comprehensive market research solutions from strategy to innovation. Brand strategy, product testing, customer experience, competitive intelligence, and advanced analytics to drive business growth.",
+    "keywords": "market research solutions, brand strategy, product innovation, customer experience, competitive intelligence, advanced analytics",
+    "ogImage": "https://proofinsights.com/og-image-solutions.png"
+  },
+  "/solutions/strategy": {
+    "title": "Strategic Market Research | Brand Strategy & Competitive Intelligence",
+    "description": "Strategic market research services including brand strategy development, competitive landscape analysis, market discovery, and segmentation to guide your business decisions.",
+    "keywords": "strategic market research, brand strategy, competitive intelligence, market segmentation, business strategy",
+    "ogImage": "https://proofinsights.com/og-image-strategy.png"
+  },
+  "/solutions/strategy/brand-strategy": {
+    "title": "Brand Strategy Research | Brand Positioning & Equity Analysis",
+    "description": "Comprehensive brand strategy research including brand equity measurement, positioning analysis, and brand extension opportunities to strengthen your market position.",
+    "keywords": "brand strategy research, brand positioning, brand equity, brand analysis, brand development",
+    "ogImage": "https://proofinsights.com/og-image-brand-strategy.png"
+  },
+  "/solutions/strategy/competitive-landscape": {
+    "title": "Competitive Landscape Analysis | Market Intelligence Research",
+    "description": "In-depth competitive landscape analysis and market intelligence research to understand your competitive position and identify strategic opportunities.",
+    "keywords": "competitive analysis, market intelligence, competitive landscape, competitor research, market positioning",
+    "ogImage": "https://proofinsights.com/og-image-competitive.png"
+  },
+  "/solutions/strategy/market-discovery-opportunity": {
+    "title": "Market Discovery & Opportunity Analysis | Strategic Market Research",
+    "description": "Market discovery and opportunity analysis to identify new market segments, growth opportunities, and strategic directions for your business.",
+    "keywords": "market discovery, opportunity analysis, market research, growth opportunities, market expansion",
+    "ogImage": "https://proofinsights.com/og-image-market-discovery.png"
+  },
+  "/solutions/strategy/market-segmentation": {
+    "title": "Market Segmentation Research | Customer Segmentation Analysis",
+    "description": "Advanced market segmentation research to identify and understand distinct customer segments, enabling targeted marketing and product strategies.",
+    "keywords": "market segmentation, customer segmentation, target audience research, consumer segments, segmentation analysis",
+    "ogImage": "https://proofinsights.com/og-image-segmentation.png"
+  },
+  "/solutions/innovation-growth": {
+    "title": "Product Innovation & Growth Research | Concept Testing & Development",
+    "description": "Product innovation and growth research services including concept testing, product optimization, pricing research, and feature development to drive business growth.",
+    "keywords": "product innovation, concept testing, product development, growth research, innovation strategy",
+    "ogImage": "https://proofinsights.com/og-image-innovation.png"
+  },
+  "/solutions/innovation-growth/concept-testing": {
+    "title": "Concept Testing Research | Product Concept Validation & Optimization",
+    "description": "Comprehensive concept testing research to validate and optimize your product concepts before launch, ensuring market success and consumer acceptance.",
+    "keywords": "concept testing, product validation, concept research, product concepts, innovation testing",
+    "ogImage": "https://proofinsights.com/og-image-concept-testing.png"
+  },
+  "/solutions/innovation-growth/product-testing": {
+    "title": "Product Testing Research | Product Performance & Optimization",
+    "description": "In-depth product testing research to evaluate product performance, identify optimization opportunities, and ensure market readiness.",
+    "keywords": "product testing, product research, product performance, product optimization, market testing",
+    "ogImage": "https://proofinsights.com/og-image-product-testing.png"
+  },
+  "/solutions/innovation-growth/pricing": {
+    "title": "Pricing Research | Price Optimization & Elasticity Analysis",
+    "description": "Strategic pricing research including price optimization, elasticity analysis, and pricing strategy development to maximize revenue and market penetration.",
+    "keywords": "pricing research, price optimization, pricing strategy, price elasticity, revenue optimization",
+    "ogImage": "https://proofinsights.com/og-image-pricing.png"
+  },
+  "/solutions/innovation-growth/name-testing": {
+    "title": "Name Testing Research | Brand Name & Product Name Validation",
+    "description": "Strategic name testing research to validate brand names and product names, ensuring strong market appeal and brand recognition.",
+    "keywords": "name testing, brand naming, product naming, name research, brand name validation",
+    "ogImage": "https://proofinsights.com/og-image-name-testing.png"
+  },
+  "/solutions/innovation-growth/package-testing": {
+    "title": "Package Testing Research | Packaging Design & Optimization",
+    "description": "Comprehensive package testing research to optimize packaging design, improve shelf appeal, and enhance consumer purchase decisions.",
+    "keywords": "package testing, packaging research, packaging design, shelf appeal, packaging optimization",
+    "ogImage": "https://proofinsights.com/og-image-package-testing.png"
+  },
+  "/solutions/innovation-growth/feature-benefit-testing": {
+    "title": "Feature & Benefit Testing | Product Feature Optimization Research",
+    "description": "Feature and benefit testing research to identify the most compelling product features and benefits that drive consumer preference and purchase intent.",
+    "keywords": "feature testing, benefit testing, product features, consumer benefits, feature optimization",
+    "ogImage": "https://proofinsights.com/og-image-feature-testing.png"
+  },
+  "/solutions/innovation-growth/ad-claim-validation": {
+    "title": "Ad Claim Validation Research | Advertising Claims Testing",
+    "description": "Ad claim validation research to test and validate advertising claims, ensuring credibility, compliance, and maximum marketing impact.",
+    "keywords": "ad claim validation, advertising claims, claim testing, marketing claims, advertising research",
+    "ogImage": "https://proofinsights.com/og-image-ad-claims.png"
+  },
+  "/solutions/marketing-messaging": {
+    "title": "Marketing & Messaging Research | Ad Effectiveness & Optimization",
+    "description": "Marketing and messaging research services including ad effectiveness testing, message optimization, and positioning research to maximize marketing ROI.",
+    "keywords": "marketing research, messaging research, ad effectiveness, marketing optimization, advertising research",
+    "ogImage": "https://proofinsights.com/og-image-marketing.png"
+  },
+  "/solutions/marketing-messaging/ad-effectiveness": {
+    "title": "Ad Effectiveness Research | Advertising Performance Analysis",
+    "description": "Comprehensive ad effectiveness research to measure advertising performance, optimize campaigns, and maximize marketing ROI across all channels.",
+    "keywords": "ad effectiveness, advertising research, campaign performance, marketing ROI, advertising analysis",
+    "ogImage": "https://proofinsights.com/og-image-ad-effectiveness.png"
+  },
+  "/solutions/marketing-messaging/ad-optimization": {
+    "title": "Ad Optimization Research | Creative Testing & Message Optimization",
+    "description": "Ad optimization research including creative testing, message optimization, and campaign refinement to improve advertising performance and engagement.",
+    "keywords": "ad optimization, creative testing, message optimization, advertising optimization, campaign testing",
+    "ogImage": "https://proofinsights.com/og-image-ad-optimization.png"
+  },
+  "/solutions/marketing-messaging/messaging-positioning": {
+    "title": "Messaging & Positioning Research | Brand Message Development",
+    "description": "Strategic messaging and positioning research to develop compelling brand messages and optimal market positioning that resonates with target audiences.",
+    "keywords": "messaging research, positioning research, brand messaging, market positioning, communication strategy",
+    "ogImage": "https://proofinsights.com/og-image-messaging.png"
+  },
+  "/solutions/monitoring-improving": {
+    "title": "Brand Monitoring & Improvement | Customer Experience Research",
+    "description": "Brand monitoring and improvement research including brand health tracking, customer satisfaction, and experience optimization to maintain competitive advantage.",
+    "keywords": "brand monitoring, customer experience, brand health, satisfaction research, performance tracking",
+    "ogImage": "https://proofinsights.com/og-image-monitoring.png"
+  },
+  "/solutions/monitoring-improving/brand-health-tracking": {
+    "title": "Brand Health Tracking | Brand Performance Monitoring Research",
+    "description": "Continuous brand health tracking and performance monitoring to measure brand strength, track competitive position, and identify improvement opportunities.",
+    "keywords": "brand health tracking, brand monitoring, brand performance, brand metrics, brand research",
+    "ogImage": "https://proofinsights.com/og-image-brand-health.png"
+  },
+  "/solutions/monitoring-improving/customer-experience-satisfaction": {
+    "title": "Customer Experience & Satisfaction Research | CX Optimization",
+    "description": "Customer experience and satisfaction research to optimize touchpoints, improve customer journey, and enhance overall satisfaction and loyalty.",
+    "keywords": "customer experience, customer satisfaction, CX research, customer journey, satisfaction surveys",
+    "ogImage": "https://proofinsights.com/og-image-customer-experience.png"
+  },
+  "/solutions/monitoring-improving/customer-experience-satisfaction/event-driven-measurement": {
+    "title": "Event-Driven Customer Experience Measurement | Revolutionary CX Methodology",
+    "description": "Revolutionary event-driven customer experience measurement methodology for creating actionable loyalty data. Track every customer interaction to understand what drives satisfaction and advocacy.",
+    "keywords": "event-driven customer experience, CX measurement, customer loyalty data, experience tracking, customer journey analytics",
+    "ogImage": "https://proofinsights.com/og-image-event-driven-cx.png"
+  },
+  "/solutions/monitoring-improving/awareness-usage": {
+    "title": "Awareness & Usage Research | Brand Awareness & Product Usage Studies",
+    "description": "Awareness and usage research to measure brand awareness, track product usage patterns, and understand consumer behavior and preferences.",
+    "keywords": "brand awareness, usage research, consumer behavior, product usage, awareness studies",
+    "ogImage": "https://proofinsights.com/og-image-awareness.png"
+  },
+  "/solutions/private-equity": {
+    "title": "Private Equity Market Research | Due Diligence & Growth Analysis",
+    "description": "Specialized private equity market research including due diligence research, market validation, and growth opportunity analysis for investment decisions.",
+    "keywords": "private equity research, due diligence, investment research, market validation, growth analysis",
+    "ogImage": "https://proofinsights.com/og-image-private-equity.png"
+  },
+  "/solutions/crm-databases": {
+    "title": "CRM & Database Analytics | Customer Data Analysis & Modeling",
+    "description": "CRM and database analytics services including predictive modeling, RFM analysis, and retail impact factor analysis to optimize customer relationships.",
+    "keywords": "CRM analytics, database analysis, predictive modeling, customer analytics, data modeling",
+    "ogImage": "https://proofinsights.com/og-image-crm.png"
+  },
+  "/solutions/crm-databases/predictive-modeling": {
+    "title": "Predictive Modeling | Customer Behavior & Market Forecasting",
+    "description": "Advanced predictive modeling services to forecast customer behavior, market trends, and business outcomes using sophisticated analytical techniques.",
+    "keywords": "predictive modeling, customer behavior, market forecasting, predictive analytics, data modeling",
+    "ogImage": "https://proofinsights.com/og-image-predictive.png"
+  },
+  "/solutions/crm-databases/rfm-analysis": {
+    "title": "RFM Analysis | Customer Segmentation & Value Analysis",
+    "description": "RFM (Recency, Frequency, Monetary) analysis to segment customers, identify high-value segments, and optimize marketing strategies.",
+    "keywords": "RFM analysis, customer segmentation, customer value, customer analytics, database marketing",
+    "ogImage": "https://proofinsights.com/og-image-rfm.png"
+  },
+  "/solutions/crm-databases/retail-impact-factor": {
+    "title": "Retail Impact Factor Analysis | Store Performance & Market Impact",
+    "description": "Retail impact factor analysis to measure store performance, market impact, and optimize retail strategies for maximum effectiveness.",
+    "keywords": "retail impact, store performance, retail analytics, market impact, retail research",
+    "ogImage": "https://proofinsights.com/og-image-retail-impact.png"
+  },
+  "/industries-clients": {
+    "title": "Industries & Clients | Market Research Across All Sectors",
+    "description": "PROOF Insights serves clients across diverse industries including healthcare, beauty, technology, retail, and more. Discover our industry expertise and client success stories.",
+    "keywords": "market research industries, client sectors, healthcare research, beauty research, technology research, retail research",
+    "ogImage": "https://proofinsights.com/og-image-industries.png"
+  },
+  "/industries-clients/healthcare-surgical": {
+    "title": "Healthcare & Surgical Market Research | Medical Device Research",
+    "description": "Specialized healthcare and surgical market research including medical device testing, healthcare market analysis, and clinical research insights.",
+    "keywords": "healthcare research, medical device research, surgical research, clinical research, healthcare market analysis",
+    "ogImage": "https://proofinsights.com/og-image-healthcare.png"
+  },
+  "/industries-clients/beauty-cosmetics": {
+    "title": "Beauty & Cosmetics Market Research | Beauty Industry Insights",
+    "description": "Beauty and cosmetics market research including product testing, brand positioning, consumer preferences, and beauty market trends analysis.",
+    "keywords": "beauty research, cosmetics research, beauty market analysis, skincare research, beauty industry insights",
+    "ogImage": "https://proofinsights.com/og-image-beauty.png"
+  },
+  "/industries-clients/saas-technology": {
+    "title": "SaaS & Technology Market Research | Tech Industry Analysis",
+    "description": "SaaS and technology market research including user experience research, feature testing, pricing optimization, and technology market analysis.",
+    "keywords": "SaaS research, technology research, software research, tech market analysis, user experience research",
+    "ogImage": "https://proofinsights.com/og-image-saas.png"
+  },
+  "/industries-clients/retail": {
+    "title": "Retail Market Research | Consumer Retail Industry Analysis",
+    "description": "Retail market research including consumer behavior analysis, retail strategy, merchandising research, and retail market trends.",
+    "keywords": "retail research, consumer retail, retail market analysis, merchandising research, retail strategy",
+    "ogImage": "https://proofinsights.com/og-image-retail.png"
+  },
+  "/industries-clients/food-restaurants": {
+    "title": "Food & Restaurant Market Research | Food Industry Analysis",
+    "description": "Food and restaurant market research including menu testing, concept development, consumer taste preferences, and food market trends.",
+    "keywords": "food research, restaurant research, food market analysis, menu testing, food industry insights",
+    "ogImage": "https://proofinsights.com/og-image-food.png"
+  },
+  "/industries-clients/apparel": {
+    "title": "Apparel Market Research | Fashion Industry Analysis",
+    "description": "Apparel and fashion market research including brand positioning, consumer preferences, product testing, and fashion market trends.",
+    "keywords": "apparel research, fashion research, clothing research, fashion market analysis, apparel industry insights",
+    "ogImage": "https://proofinsights.com/og-image-apparel.png"
+  },
+  "/industries-clients/dental-oral-care": {
+    "title": "Dental & Oral Care Market Research | Dental Industry Analysis",
+    "description": "Dental and oral care market research including product testing, professional insights, consumer behavior, and dental market analysis.",
+    "keywords": "dental research, oral care research, dental market analysis, dental product testing, oral health research",
+    "ogImage": "https://proofinsights.com/og-image-dental.png"
+  },
+  "/industries-clients/life-sciences": {
+    "title": "Life Sciences Market Research | Pharmaceutical & Biotech Research",
+    "description": "Life sciences market research including pharmaceutical research, biotech market analysis, clinical insights, and healthcare innovation research.",
+    "keywords": "life sciences research, pharmaceutical research, biotech research, clinical research, healthcare innovation",
+    "ogImage": "https://proofinsights.com/og-image-life-sciences.png"
+  },
+  "/industries-clients/digital-media-publications": {
+    "title": "Digital Media & Publications Market Research | Media Industry Analysis",
+    "description": "Digital media and publications market research including audience analysis, content strategy, media consumption patterns, and digital trends.",
+    "keywords": "digital media research, publications research, media market analysis, audience research, content strategy",
+    "ogImage": "https://proofinsights.com/og-image-media.png"
+  },
+  "/industries-clients/networks": {
+    "title": "Networks Market Research | Telecommunications & Network Analysis",
+    "description": "Networks and telecommunications market research including service analysis, customer satisfaction, network performance, and telecom market trends.",
+    "keywords": "networks research, telecommunications research, telecom market analysis, network services research",
+    "ogImage": "https://proofinsights.com/og-image-networks.png"
+  },
+  "/industries-clients/non-profit": {
+    "title": "Non-Profit Market Research | Non-Profit Organization Research",
+    "description": "Non-profit market research including donor research, program evaluation, community needs assessment, and non-profit effectiveness studies.",
+    "keywords": "non-profit research, donor research, community research, non-profit market analysis, charitable organization research",
+    "ogImage": "https://proofinsights.com/og-image-nonprofit.png"
+  },
+  "/methodologies": {
+    "title": "Research Methodologies | Advanced Market Research Techniques",
+    "description": "Comprehensive research methodologies including conjoint analysis, segmentation, pricing research, and advanced statistical techniques for actionable insights.",
+    "keywords": "research methodologies, conjoint analysis, market research techniques, statistical analysis, research methods",
+    "ogImage": "https://proofinsights.com/og-image-methodologies.png"
+  },
+  "/methodologies/conjoint-and-acbc": {
+    "title": "Conjoint Analysis & ACBC | Advanced Choice Modeling Research",
+    "description": "Conjoint analysis and Adaptive Choice-Based Conjoint (ACBC) research to understand consumer preferences and optimize product features and pricing.",
+    "keywords": "conjoint analysis, ACBC, choice modeling, consumer preferences, product optimization",
+    "ogImage": "https://proofinsights.com/og-image-conjoint.png"
+  },
+  "/methodologies/max-diff-scaling": {
+    "title": "MaxDiff Scaling | Maximum Difference Scaling Research",
+    "description": "MaxDiff scaling research to prioritize features, benefits, or attributes by measuring relative importance and consumer preferences.",
+    "keywords": "MaxDiff scaling, maximum difference scaling, attribute importance, preference research, priority ranking",
+    "ogImage": "https://proofinsights.com/og-image-maxdiff.png"
+  },
+  "/methodologies/price-optimization": {
+    "title": "Price Optimization Research | Pricing Strategy & Elasticity",
+    "description": "Price optimization research including price elasticity analysis, competitive pricing, and revenue optimization strategies.",
+    "keywords": "price optimization, pricing research, price elasticity, pricing strategy, revenue optimization",
+    "ogImage": "https://proofinsights.com/og-image-price-optimization.png"
+  },
+  "/methodologies/van-westendorp": {
+    "title": "Van Westendorp Price Sensitivity | Price Acceptance Research",
+    "description": "Van Westendorp Price Sensitivity Meter research to determine optimal pricing ranges and price acceptance levels for products and services.",
+    "keywords": "Van Westendorp, price sensitivity, price acceptance, pricing research, optimal pricing",
+    "ogImage": "https://proofinsights.com/og-image-van-westendorp.png"
+  },
+  "/methodologies/kano-analysis": {
+    "title": "Kano Analysis | Customer Satisfaction & Feature Prioritization",
+    "description": "Kano analysis to categorize product features based on customer satisfaction impact and prioritize development efforts for maximum customer delight.",
+    "keywords": "Kano analysis, customer satisfaction, feature prioritization, product development, customer delight",
+    "ogImage": "https://proofinsights.com/og-image-kano.png"
+  },
+  "/methodologies/turf-analysis": {
+    "title": "TURF Analysis | Total Unduplicated Reach & Frequency",
+    "description": "TURF analysis to optimize product portfolios, media planning, and marketing strategies by maximizing reach while minimizing overlap.",
+    "keywords": "TURF analysis, reach and frequency, portfolio optimization, media planning, marketing optimization",
+    "ogImage": "https://proofinsights.com/og-image-turf.png"
+  },
+  "/methodologies/cluster-analysis": {
+    "title": "Cluster Analysis | Market Segmentation & Customer Grouping",
+    "description": "Cluster analysis for market segmentation, customer grouping, and identifying distinct consumer segments for targeted strategies.",
+    "keywords": "cluster analysis, market segmentation, customer segmentation, consumer groups, segmentation research",
+    "ogImage": "https://proofinsights.com/og-image-cluster.png"
+  },
+  "/methodologies/factor-analysis": {
+    "title": "Factor Analysis | Data Reduction & Variable Relationships",
+    "description": "Factor analysis to identify underlying factors, reduce data complexity, and understand relationships between variables in market research.",
+    "keywords": "factor analysis, data reduction, variable analysis, statistical analysis, market research methods",
+    "ogImage": "https://proofinsights.com/og-image-factor.png"
+  },
+  "/methodologies/latent-class-modeling": {
+    "title": "Latent Class Modeling | Advanced Segmentation Analysis",
+    "description": "Latent class modeling for advanced market segmentation, identifying hidden consumer segments, and understanding heterogeneous preferences.",
+    "keywords": "latent class modeling, advanced segmentation, consumer segments, preference heterogeneity, statistical modeling",
+    "ogImage": "https://proofinsights.com/og-image-latent-class.png"
+  },
+  "/methodologies/structural-equation-modeling": {
+    "title": "Structural Equation Modeling | Complex Relationship Analysis",
+    "description": "Structural equation modeling (SEM) to analyze complex relationships between variables and test theoretical models in market research.",
+    "keywords": "structural equation modeling, SEM, relationship analysis, causal modeling, advanced statistics",
+    "ogImage": "https://proofinsights.com/og-image-sem.png"
+  },
+  "/methodologies/multi-dimensional-scaling": {
+    "title": "Multi-Dimensional Scaling | Perceptual Mapping Research",
+    "description": "Multi-dimensional scaling (MDS) for perceptual mapping, brand positioning analysis, and visualizing competitive landscapes.",
+    "keywords": "multi-dimensional scaling, MDS, perceptual mapping, brand positioning, competitive analysis",
+    "ogImage": "https://proofinsights.com/og-image-mds.png"
+  },
+  "/methodologies/driver-analysis": {
+    "title": "Driver Analysis | Key Performance Driver Identification",
+    "description": "Driver analysis to identify key factors that drive customer satisfaction, loyalty, and business performance for strategic decision making.",
+    "keywords": "driver analysis, performance drivers, satisfaction drivers, key factor analysis, business intelligence",
+    "ogImage": "https://proofinsights.com/og-image-driver.png"
+  },
+  "/methodologies/importance-performance-nps": {
+    "title": "Importance-Performance & NPS | Customer Loyalty Research",
+    "description": "Importance-Performance analysis and Net Promoter Score (NPS) research to measure customer loyalty and identify improvement priorities.",
+    "keywords": "importance-performance analysis, NPS, Net Promoter Score, customer loyalty, satisfaction research",
+    "ogImage": "https://proofinsights.com/og-image-nps.png"
+  },
+  "/methodologies/competitive-landscape": {
+    "title": "Competitive Landscape Analysis | Market Intelligence Research",
+    "description": "Competitive landscape analysis methodology to map competitive environments, identify opportunities, and develop strategic advantages.",
+    "keywords": "competitive landscape, competitive analysis, market intelligence, competitor research, strategic analysis",
+    "ogImage": "https://proofinsights.com/og-image-competitive-landscape.png"
+  },
+  "/methodologies/database-modeling": {
+    "title": "Database Modeling | Customer Data Analysis & Segmentation",
+    "description": "Database modeling techniques for customer data analysis, behavioral segmentation, and predictive analytics using existing customer databases.",
+    "keywords": "database modeling, customer data analysis, behavioral segmentation, predictive analytics, data mining",
+    "ogImage": "https://proofinsights.com/og-image-database.png"
+  },
+  "/methodologies/monadic-testing": {
+    "title": "Monadic Testing | Single Concept Evaluation Research",
+    "description": "Monadic testing methodology for evaluating single concepts, products, or ideas to obtain unbiased feedback and accurate performance metrics.",
+    "keywords": "monadic testing, concept evaluation, product testing, unbiased research, single concept testing",
+    "ogImage": "https://proofinsights.com/og-image-monadic.png"
+  },
+  "/methodologies/understanding-audience": {
+    "title": "Understanding Audience | Consumer Behavior & Insights Research",
+    "description": "Audience understanding methodologies to gain deep insights into consumer behavior, motivations, and decision-making processes.",
+    "keywords": "audience research, consumer behavior, consumer insights, audience analysis, behavioral research",
+    "ogImage": "https://proofinsights.com/og-image-audience.png"
+  },
+  "/methodologies/features-concepts-price-optimization": {
+    "title": "Features, Concepts & Price Optimization | Integrated Research Approach",
+    "description": "Integrated research approach combining feature testing, concept optimization, and price optimization for comprehensive product development insights.",
+    "keywords": "feature optimization, concept testing, price optimization, integrated research, product development",
+    "ogImage": "https://proofinsights.com/og-image-integrated.png"
+  },
+  "/methodologies/price-laddering": {
+    "title": "Price Laddering | Sequential Pricing Research Methodology",
+    "description": "Price laddering methodology to understand price sensitivity across different price points and optimize pricing strategies.",
+    "keywords": "price laddering, pricing research, price sensitivity, pricing methodology, sequential pricing",
+    "ogImage": "https://proofinsights.com/og-image-price-laddering.png"
+  },
+  "/resources": {
+    "title": "Market Research Resources | Insights, Case Studies & Thought Leadership",
+    "description": "Explore PROOF Insights' comprehensive resources including case studies, blog articles, white papers, and thought leadership content on market research.",
+    "keywords": "market research resources, case studies, research insights, thought leadership, market research content",
+    "ogImage": "https://proofinsights.com/og-image-resources.png"
+  },
+  "/resources/case-studies": {
+    "title": "Market Research Case Studies | Real Client Success Stories",
+    "description": "Explore real market research case studies showcasing successful projects across industries, methodologies, and business challenges.",
+    "keywords": "market research case studies, client success stories, research examples, case study portfolio",
+    "ogImage": "https://proofinsights.com/og-image-case-studies.png"
+  },
+  "/resources/blog": {
+    "title": "Market Research Blog | Industry Insights & Best Practices",
+    "description": "Stay updated with the latest market research trends, methodologies, and best practices through PROOF Insights' expert blog content.",
+    "keywords": "market research blog, research insights, industry trends, research best practices, market research articles",
+    "ogImage": "https://proofinsights.com/og-image-blog.png"
+  },
+  "/resources/thought-leadership": {
+    "title": "Thought Leadership | Market Research Innovation & Trends",
+    "description": "Thought leadership content on market research innovation, emerging trends, and the future of consumer insights and analytics.",
+    "keywords": "thought leadership, market research innovation, research trends, industry leadership, research expertise",
+    "ogImage": "https://proofinsights.com/og-image-thought-leadership.png"
+  },
+  "/resources/white-papers-ebooks": {
+    "title": "White Papers & eBooks | In-Depth Market Research Guides",
+    "description": "Download comprehensive white papers and eBooks covering advanced market research methodologies, industry insights, and strategic guidance.",
+    "keywords": "market research white papers, research eBooks, research guides, methodology guides, research resources",
+    "ogImage": "https://proofinsights.com/og-image-whitepapers.png"
+  },
+  "/resources/tools": {
+    "title": "Market Research Tools | Research Calculators & Resources",
+    "description": "Access useful market research tools, calculators, and resources to support your research planning and analysis needs.",
+    "keywords": "market research tools, research calculators, research resources, research planning tools",
+    "ogImage": "https://proofinsights.com/og-image-tools.png"
+  },
+  "/resources/in-the-news": {
+    "title": "PROOF Insights in the News | Media Coverage & Recognition",
+    "description": "Latest news coverage, media mentions, and industry recognition of PROOF Insights' market research expertise and achievements.",
+    "keywords": "PROOF Insights news, media coverage, industry recognition, market research news, company news",
+    "ogImage": "https://proofinsights.com/og-image-news.png"
+  },
+  "/resources/case-studies/ltot-therapy-market-sizing": {
+    "title": "LTOT Market Sizing Case Study | Global O2 Products Company | PROOF Insights",
+    "description": "How a global oxygen therapy company evaluated market opportunities for Long-Term Oxygen Therapy (LTOT) solutions through comprehensive market sizing and strategic assessment.",
+    "keywords": "LTOT market sizing, oxygen therapy market research, healthcare market analysis, medical device market sizing, strategic assessment",
+    "ogImage": "https://proofinsights.com/og-image-ltot-case-study.png"
+  }
+}
+
