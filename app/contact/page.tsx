@@ -54,8 +54,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-proof-gray-900 mb-6">Get In Touch</h2>
             <p className="text-xl text-proof-gray-600 max-w-2xl mx-auto">
-              Let's discuss your research needs and we'll get back to you with a customized proposal based on our recommendations at no cost or obligation to you..
-            </p>
+              Let's discuss your research needs and we'll get back to you with a customized proposal based on our recommendations at no cost or obligation to you.</p>
           </div>
           
           <Card className="p-8 bg-white">

@@ -1,3 +1,8 @@
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,8 +39,19 @@ export default function MultiDimensionalScalingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative py-24"
+        style={{
+          backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/L4FxWiCsZKTowyDMZp9cj/multidim-scaling.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <Map className="w-4 h-4 mr-1" />
@@ -45,19 +61,17 @@ export default function MultiDimensionalScalingPage() {
               Multi-Dimensional Scaling
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">(MDS) </span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Visualize competitive positioning and brand perceptions through sophisticated spatial mapping 
               techniques that reveal market dynamics, competitive relationships, and strategic opportunities.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Compass className="w-5 h-5 mr-2" />
-                Start Mapping Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Eye className="w-5 h-5 mr-2" />
-                View Map Examples
-              </Button>
+            <div className="flex justify-center pt-8">
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Compass className="w-5 h-5 mr-2" />
+                  Start Mapping Analysis
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -66,105 +80,67 @@ export default function MultiDimensionalScalingPage() {
       {/* Overview Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Spatial Representation of Market Perceptions
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Multi-Dimensional Scaling (MDS) transforms customer perceptions and similarity ratings 
-                into visual maps that reveal the competitive landscape structure, brand positioning, 
-                and untapped market opportunities in intuitive, spatial representations.
-              </p>
+          <div className="text-center space-y-6 mb-16">
+            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
+              Methodology Overview
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Spatial Representation of Market Perceptions
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
+              Multi-Dimensional Scaling (MDS) transforms customer perceptions and similarity ratings 
+              into visual maps that reveal the competitive landscape structure, brand positioning, 
+              and untapped market opportunities in intuitive, spatial representations.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            {/* Left side - Two cards stacked */}
+            <div className="space-y-6">
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Network className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Competitive Structure Analysis</h3>
+                    <p className="text-proof-gray-600">
+                      Reveals underlying market structure, competitive clusters, and the dimensions 
+                      that truly differentiate brands in customers' minds.
+                    </p>
+                  </div>
+                </div>
+              </Card>
               
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Map className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Perceptual Mapping</h3>
-                      <p className="text-proof-gray-600">
-                        Creates visual maps showing how customers perceive brands, products, or concepts 
-                        relative to each other across key differentiating dimensions.
-                      </p>
-                    </div>
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Map className="h-5 w-5 text-white" />
                   </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Network className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Competitive Structure Analysis</h3>
-                      <p className="text-proof-gray-600">
-                        Reveals underlying market structure, competitive clusters, and the dimensions 
-                        that truly differentiate brands in customers' minds.
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Perceptual Mapping</h3>
+                    <p className="text-proof-gray-600">
+                      Creates visual maps showing how customers perceive brands, products, or concepts 
+                      relative to each other across key differentiating dimensions.
+                    </p>
                   </div>
-                </Card>
-              </div>
+                </div>
+              </Card>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">MDS Analysis Impact</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Strategic Insights</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Map className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">92%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Positioning Accuracy</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">35%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Strategy Improvement</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">12K+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Perceptions Mapped</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <BarChart3 className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">180+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Maps Created</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Strategic Clarity</span>
-                    <span className="font-medium text-proof-gray-900">94%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '94%'}}></div>
-                  </div>
-                </div>
+            {/* Right side - Perceptual mapping visualization */}
+            <div className="relative">
+              <div 
+                className="w-full h-96 rounded-2xl shadow-2xl border border-proof-gray-200 relative overflow-hidden"
+                style={{
+                  backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/J8rwGEXrGWek9EAGbbAMa/image.png')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                {/* Optional overlay for better text readability if needed */}
+                <div className="absolute inset-0 bg-black bg-opacity-5"></div>
               </div>
             </div>
           </div>
@@ -485,17 +461,25 @@ export default function MultiDimensionalScalingPage() {
             insights into market positioning, competitive dynamics, and strategic opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Map className="w-5 h-5 mr-2" />
-              Start Perceptual Mapping
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <Compass className="w-5 h-5 mr-2" />
-              View Case Studies
-            </Button>
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Map className="w-5 h-5 mr-2" />
+                Start Perceptual Mapping
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Compass className="w-5 h-5 mr-2" />
+                View Case Studies
+              </Button>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
+

@@ -1,3 +1,9 @@
+
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,8 +36,19 @@ export default function ClusterAnalysisPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative py-24"
+        style={{
+          backgroundImage: 'url(https://assets.macaly-user-data.dev/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/Q24V4oEGAL2SIYtonXCQs/cluster-analysis.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <Users className="w-4 h-4 mr-1" />
@@ -41,19 +58,17 @@ export default function ClusterAnalysisPage() {
               Cluster Analysis &
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Customer Segmentation</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Segment your customer base into distinct, meaningful groups based on behavioral similarities, 
               preferences, and characteristics to enable targeted strategies and personalized experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Map className="w-5 h-5 mr-2" />
-                Start Segmentation
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Activity className="w-5 h-5 mr-2" />
-                View Examples
-              </Button>
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Map className="w-5 h-5 mr-2" />
+                  Start Segmentation
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -62,106 +77,62 @@ export default function ClusterAnalysisPage() {
       {/* Overview Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Discovering Natural Customer Groups
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Cluster analysis is an unsupervised machine learning technique that groups customers 
-                with similar characteristics into distinct segments. This data-driven approach reveals 
-                natural patterns in customer behavior without preconceived notions.
-              </p>
+          {/* Centered header content */}
+          <div className="text-center space-y-6 mb-16">
+            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
+              Methodology Overview
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Discovering Natural Customer Groups
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+              Cluster analysis is an unsupervised machine learning technique that groups customers 
+              with similar characteristics into distinct segments. This data-driven approach reveals 
+              natural patterns in customer behavior without preconceived notions.
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            {/* Left side - Two cards arranged vertically */}
+            <div className="space-y-6 flex flex-col justify-between h-full min-h-[400px]">
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300 flex-1">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Layers className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Hierarchical Clustering</h3>
+                    <p className="text-proof-gray-600">
+                      Creates a tree-like structure of clusters, allowing exploration of different 
+                      numbers of segments and understanding nested relationships.
+                    </p>
+                  </div>
+                </div>
+              </Card>
               
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Layers className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Hierarchical Clustering</h3>
-                      <p className="text-proof-gray-600">
-                        Creates a tree-like structure of clusters, allowing exploration of different 
-                        numbers of segments and understanding nested relationships.
-                      </p>
-                    </div>
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300 flex-1">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Target className="h-5 w-5 text-white" />
                   </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Target className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">K-Means Clustering</h3>
-                      <p className="text-proof-gray-600">
-                        Partitions customers into k clusters by minimizing within-cluster variance, 
-                        ideal for creating actionable segments for marketing campaigns.
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">K-Means Clustering</h3>
+                    <p className="text-proof-gray-600">
+                      Partitions customers into k clusters by minimizing within-cluster variance, 
+                      ideal for creating actionable segments for marketing campaigns.
+                    </p>
                   </div>
-                </Card>
-              </div>
+                </div>
+              </Card>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Clustering Performance</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Segmentation Results</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">8.2M</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Customers Analyzed</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">92%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Silhouette Score</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <BarChart3 className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">7</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Optimal Clusters</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Search className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">180+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Projects Delivered</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Cluster Stability</span>
-                    <span className="font-medium text-proof-gray-900">96%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '96%'}}></div>
-                  </div>
-                </div>
-              </div>
+            {/* Right side - Replace with the provided image */}
+            <div className="relative z-10 bg-white rounded-2xl shadow-2xl overflow-hidden border border-proof-gray-200 h-full min-h-[400px]">
+              <img 
+                src="https://assets.macaly-user-data.dev/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/PpFJSu_Pz1Viaqg2PxZn2/image.png" 
+                alt="Cluster Analysis Visualization" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -485,9 +456,9 @@ export default function ClusterAnalysisPage() {
               <Brain className="w-5 h-5 mr-2" />
               Start Cluster Analysis
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
+            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
               <PieChart className="w-5 h-5 mr-2" />
-              View Segmentation Examples
+              View Case Studies
             </Button>
           </div>
         </div>
@@ -495,3 +466,8 @@ export default function ClusterAnalysisPage() {
     </div>
   );
 }
+
+
+
+
+

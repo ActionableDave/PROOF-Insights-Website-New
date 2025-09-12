@@ -1,460 +1,393 @@
-"use client";
+import type { Metadata } from 'next';
+import siteMetadata from '@/app/metadata.json';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Compass, Shield, Target, TrendingUp, Users, BarChart3, Eye, Zap, CheckCircle, ArrowRight, Network, GitBranch, Activity } from 'lucide-react';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import Header from "@/components/Header";
-import Link from "next/link";
-import { 
-  BarChart3, 
-  Users, 
-  Target, 
-  Lightbulb,
-  ArrowRight,
-  CheckCircle,
-  TrendingUp,
-  Brain,
-  PieChart,
-  Compass,
-  Network,
-  Activity,
-  Shield
-} from "lucide-react";
+export const metadata: Metadata = siteMetadata['/methodologies/competitive-landscape'];
 
 export default function CompetitiveLandscapePage() {
-  console.log("Competitive Landscape page rendered");
-
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative py-24"
+        style={{
+          backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/dHPIEI5JA_S12XRT7Yyr8/competitive-analysis.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 hover:bg-proof-emerald-100">
               <Compass className="w-4 h-4 mr-1" />
               Competitive Intelligence
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
-              Understanding Your 
+              Understanding Your
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Competitive Landscape</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Advanced research methodologies that map competitive positioning, identify market gaps, 
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+              Advanced research methodologies that map competitive positioning, identify market gaps,
               and reveal strategic opportunities to gain sustainable competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
-                <Link href="#multi-dimensional-scaling">
+                <Link href="/contact">
                   <Compass className="w-5 h-5 mr-2" />
                   Explore Methods
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg" asChild>
-                <Link href="#market-positioning">
-                  <Shield className="w-5 h-5 mr-2" />
-                  Competitive Analysis
-                </Link>
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Methodologies Grid */}
+      {/* Related Methodologies Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
-              <Brain className="h-4 w-4 mr-2" />
-              Strategic Analysis
+          <div className="text-center mb-16">
+            <Badge className="bg-proof-orange-100 text-proof-orange-700 border-proof-orange-200 mb-4">
+              <Network className="w-4 h-4 mr-1" />
+              Advanced Analytics
             </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-              Competitive Intelligence Methodologies
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-6">
+              Related Methodologies
             </h2>
-            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              Sophisticated analytical techniques that reveal competitive dynamics, market positioning, 
-              and strategic opportunities for differentiation and growth.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Multi-Dimensional Scaling */}
-            <Card id="multi-dimensional-scaling" className="group hover:shadow-lg transition-all duration-300 border-proof-gray-200 hover:border-proof-blue-300 flex flex-col h-full">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-proof-blue-100 rounded-lg flex items-center justify-center group-hover:bg-proof-blue-600 transition-colors duration-300">
-                    <Network className="h-6 w-6 text-proof-blue-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Multi-Dimensional Scaling</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <p className="text-proof-gray-600 mb-4">
-                  Create visual maps of competitive positioning by analyzing customer perceptions 
-                  of similarity and difference between brands, products, or services in the market.
-                </p>
-                <div className="space-y-2 flex-1">
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Perceptual mapping
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Competitive positioning analysis
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Market space visualization
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Gap identification
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Brand differentiation insights
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Strategic positioning guidance
-                  </div>
-                </div>
-                <div className="pt-4 mt-auto">
-                  <Button className="w-full bg-proof-blue-600 hover:bg-proof-blue-700 text-white" asChild>
-                    <Link href="/methodologies/competitive-landscape/multi-dimensional-scaling">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Structural Equation Modeling */}
-            <Card id="structural-equation-modeling-sem" className="group hover:shadow-lg transition-all duration-300 border-proof-gray-200 hover:border-proof-emerald-300 flex flex-col h-full">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-proof-emerald-100 rounded-lg flex items-center justify-center group-hover:bg-proof-emerald-600 transition-colors duration-300">
-                    <Activity className="h-6 w-6 text-proof-emerald-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Structural Equation Modeling (SEM)</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <p className="text-proof-gray-600 mb-4">
-                  Advanced statistical modeling that reveals complex relationships between multiple 
-                  variables, helping understand how various factors influence competitive performance.
-                </p>
-                <div className="space-y-2 flex-1">
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Causal relationship analysis
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Multi-factor impact modeling
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Performance driver identification
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Strategic lever optimization
-                  </div>
-                </div>
-                <div className="pt-4 mt-auto">
-                  <Button className="w-full bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white" asChild>
-                    <Link href="/methodologies/competitive-landscape/structural-equation-modeling">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Importance-Performance and NPS Score */}
-            <Card id="importance-performance-nps-score" className="group hover:shadow-lg transition-all duration-300 border-proof-gray-200 hover:border-proof-amber-300 flex flex-col h-full">
-              <CardHeader className="pb-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-proof-amber-100 rounded-lg flex items-center justify-center group-hover:bg-proof-amber-600 transition-colors duration-300">
-                    <TrendingUp className="h-6 w-6 text-proof-amber-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Importance-Performance and NPS Score</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
-                <p className="text-proof-gray-600 mb-4">
-                  Combine importance-performance analysis with Net Promoter Score to understand 
-                  competitive strengths, weaknesses, and customer loyalty drivers.
-                </p>
-                <div className="space-y-2 flex-1">
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Priority matrix development
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Loyalty benchmarking
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Improvement opportunity ranking
-                  </div>
-                  <div className="flex items-center text-sm text-proof-gray-600">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Competitive advantage assessment
-                  </div>
-                </div>
-                <div className="pt-4 mt-auto">
-                  <Button className="w-full bg-proof-amber-600 hover:bg-proof-amber-700 text-white" asChild>
-                    <Link href="/methodologies/competitive-landscape/importance-performance-nps">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Strategic Applications */}
-      <section className="py-20 bg-proof-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-              <Target className="h-4 w-4 mr-2" />
-              Strategic Applications
-            </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-              How Competitive Intelligence Drives Success
-            </h2>
-            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              Transform competitive analysis into actionable strategies that create 
-              sustainable market advantages and drive business growth.
+            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto">
+              Explore advanced analytical techniques that complement competitive landscape analysis and provide deeper insights.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Compass className="h-8 w-8 text-proof-blue-600" />
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Network className="w-6 h-6 text-proof-blue-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Market Positioning</CardTitle>
+                <CardTitle className="text-xl">Multidimensional Scaling</CardTitle>
+                <CardDescription>
+                  Visualize complex relationships and positioning in competitive markets through advanced statistical modeling.
+                </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-proof-gray-600">
-                  Identify optimal market positions by understanding competitive gaps, 
-                  customer needs, and differentiation opportunities.
+              <CardContent>
+                <p className="text-sm text-proof-gray-600 mb-4">
+                  Map competitive positioning across multiple dimensions to reveal hidden market structures and opportunities.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    White space identification
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Differentiation strategies
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Value proposition optimization
-                  </div>
-                </div>
+                <Button variant="outline" className="w-full group-hover:bg-proof-blue-50 group-hover:border-proof-blue-200" asChild>
+                  <Link href="/methodologies/multi-dimensional-scaling">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-8 w-8 text-proof-emerald-600" />
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                  <GitBranch className="w-6 h-6 text-proof-emerald-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Competitive Defense</CardTitle>
+                <CardTitle className="text-xl">Structural Equation Modeling</CardTitle>
+                <CardDescription>
+                  Understand complex causal relationships between competitive factors and market outcomes.
+                </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-proof-gray-600">
-                  Protect market share by understanding competitive threats, 
-                  anticipating moves, and developing defensive strategies.
+              <CardContent>
+                <p className="text-sm text-proof-gray-600 mb-4">
+                  Model intricate relationships between brand attributes, competitive actions, and market performance.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Threat assessment
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Defensive positioning
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Customer retention strategies
-                  </div>
-                </div>
+                <Button variant="outline" className="w-full group-hover:bg-proof-emerald-50 group-hover:border-proof-emerald-200" asChild>
+                  <Link href="/methodologies/structural-equation-modeling">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Lightbulb className="h-8 w-8 text-proof-amber-600" />
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <Activity className="w-6 h-6 text-proof-purple-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Innovation Direction</CardTitle>
+                <CardTitle className="text-xl">Importance-Performance Analysis and NPS</CardTitle>
+                <CardDescription>
+                  Evaluate competitive performance across key attributes and measure customer loyalty dynamics.
+                </CardDescription>
               </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-proof-gray-600">
-                  Guide product and service innovation by understanding competitive 
-                  weaknesses and unmet customer needs in the market.
+              <CardContent>
+                <p className="text-sm text-proof-gray-600 mb-4">
+                  Identify performance gaps and loyalty drivers to inform competitive strategy and positioning.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Innovation opportunities
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Feature gap analysis
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Development prioritization
-                  </div>
-                </div>
+                <Button variant="outline" className="w-full group-hover:bg-proof-purple-50 group-hover:border-proof-purple-200" asChild>
+                  <Link href="/methodologies/importance-performance-nps">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Methodology Benefits */}
+      {/* Market Positioning Section */}
+      <section id="market-positioning" className="py-20 bg-proof-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 mb-4">
+              <Target className="w-4 h-4 mr-1" />
+              Market Positioning
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-6">
+              Strategic Competitive Analysis
+            </h2>
+            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto">
+              Comprehensive methodologies to understand your competitive environment and identify strategic opportunities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-proof-blue-600" />
+                </div>
+                <CardTitle className="text-xl">Competitive Mapping</CardTitle>
+                <CardDescription>
+                  Comprehensive analysis of direct and indirect competitors across multiple dimensions.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-proof-gray-600">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Market share analysis
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Feature comparison matrices
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Positioning maps
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-proof-emerald-600" />
+                </div>
+                <CardTitle className="text-xl">Market Gap Analysis</CardTitle>
+                <CardDescription>
+                  Identify unmet needs and whitespace opportunities in your market.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-proof-gray-600">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Unmet customer needs
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Whitespace identification
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Opportunity sizing
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-proof-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-proof-purple-600" />
+                </div>
+                <CardTitle className="text-xl">Competitive Intelligence</CardTitle>
+                <CardDescription>
+                  Deep insights into competitor strategies, strengths, and vulnerabilities.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-proof-gray-600">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Strategy assessment
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    SWOT analysis
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2 flex-shrink-0" />
+                    Threat evaluation
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Methodology Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="text-center mb-16">
+            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 mb-4">
+              <BarChart3 className="w-4 h-4 mr-1" />
+              Research Methodology
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-6">
+              Our Competitive Analysis Process
+            </h2>
+            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto">
+              A systematic approach to understanding your competitive environment and strategic positioning.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
-                  Competitive Advantage
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Turn Intelligence Into Action
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Our competitive landscape methodologies provide the strategic intelligence 
-                needed to make informed decisions, anticipate market changes, and maintain competitive advantage.
-              </p>
-              
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Network className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Market Clarity</h3>
-                      <p className="text-proof-gray-600">
-                        Gain clear understanding of competitive dynamics, market structure, 
-                        and positioning opportunities through visual and statistical analysis.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Activity className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Strategic Focus</h3>
-                      <p className="text-proof-gray-600">
-                        Prioritize initiatives based on competitive impact analysis, 
-                        ensuring resources are allocated to high-value opportunities.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-amber-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <TrendingUp className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Proactive Strategy</h3>
-                      <p className="text-proof-gray-600">
-                        Anticipate competitive moves and market shifts, enabling proactive 
-                        rather than reactive strategic decision-making.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-proof-blue-600 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-gray-900 mb-2">Market Landscape Mapping</h3>
+                  <p className="text-proof-gray-600">
+                    Comprehensive identification and categorization of all relevant competitors across direct, indirect, and emerging threat categories.
+                  </p>
+                </div>
               </div>
 
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
-                <Link href="/contact">
-                  Start Competitive Analysis
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-proof-emerald-600 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-gray-900 mb-2">Multi-Dimensional Analysis</h3>
+                  <p className="text-proof-gray-600">
+                    Deep dive into competitor positioning across price, features, target segments, distribution channels, and brand messaging.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-proof-purple-600 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-gray-900 mb-2">Strategic Opportunity Identification</h3>
+                  <p className="text-proof-gray-600">
+                    Analysis of market gaps, unmet customer needs, and strategic positioning opportunities for competitive advantage.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-proof-orange-600 text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">
+                  4
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-gray-900 mb-2">Actionable Recommendations</h3>
+                  <p className="text-proof-gray-600">
+                    Strategic recommendations for positioning, product development, pricing, and go-to-market strategies based on competitive insights.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
+            <div className="bg-proof-gray-50 rounded-2xl p-8">
               <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Competitive Intelligence Impact</h3>
-                  <Badge className="bg-proof-emerald-100 text-proof-emerald-700">Real Results</Badge>
+                <div className="text-center">
+                  <Eye className="w-12 h-12 text-proof-blue-600 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-proof-gray-900 mb-2">Competitive Intelligence Opportunity</h3>
+                  <p className="text-proof-gray-600">
+                    Custom-designed tools and methods to more effectively keep track of competitor movements and market dynamics.</p>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Compass className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">92%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Positioning Accuracy</p>
+                  <div className="bg-white rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-proof-blue-600">Multiple</div>
+                    <div className="text-sm text-proof-gray-600">Methodologies</div>
                   </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Shield className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">2.8x</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Market Share Growth</p>
+                  <div className="bg-white rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-proof-emerald-600">24/7</div>
+                    <div className="text-sm text-proof-gray-600">Monitoring</div>
                   </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Target className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">150+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Competitive Studies</p>
+                  <div className="bg-white rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-proof-purple-600">Real-time</div>
+                    <div className="text-sm text-proof-gray-600">Updates</div>
                   </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Activity className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">87%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Strategy Success Rate</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Competitive Intelligence</span>
-                    <span className="font-medium text-proof-gray-900">91%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '91%'}}></div>
+                  <div className="bg-white rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold text-proof-orange-600">Custom</div>
+                    <div className="text-sm text-proof-gray-600">Reporting</div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 bg-proof-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="bg-proof-purple-100 text-proof-purple-700 border-proof-purple-200 mb-4">
+              <Zap className="w-4 h-4 mr-1" />
+              Strategic Advantages
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-6">
+              Why Competitive Landscape Analysis Matters
+            </h2>
+            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto">
+              Understanding your competitive environment is crucial for strategic decision-making and sustainable growth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-proof-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Target className="w-8 h-8 text-proof-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-proof-gray-900 mb-4">Strategic Positioning</h3>
+              <p className="text-proof-gray-600">
+                Identify optimal market positioning that differentiates your brand and maximizes competitive advantage.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-proof-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-proof-emerald-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-proof-gray-900 mb-4">Market Opportunities</h3>
+              <p className="text-proof-gray-600">
+                Discover untapped market segments and unmet customer needs that represent growth opportunities.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-proof-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-proof-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-proof-gray-900 mb-4">Competitive Defense</h3>
+              <p className="text-proof-gray-600">
+                Anticipate competitive threats and develop defensive strategies to protect market share and customer loyalty.
+              </p>
             </div>
           </div>
         </div>
@@ -462,31 +395,21 @@ export default function CompetitiveLandscapePage() {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-proof-blue-600 to-proof-emerald-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white">
-            Ready to Map Your Competitive Landscape?
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            Ready to Understand Your Competitive Landscape?
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Partner with PROOF Insights to leverage advanced competitive intelligence methodologies 
-            that reveal market opportunities and drive strategic advantage.
+          <p className="text-xl text-proof-blue-100 mb-8 max-w-2xl mx-auto">
+            Let our experts help you map your competitive environment and identify strategic opportunities for growth.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
-              <Link href="/contact">
-                <Brain className="w-5 h-5 mr-2" />
-                Begin Analysis
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg" asChild>
-              <Link href="/resources/case-studies">
-                <PieChart className="w-5 h-5 mr-2" />
-                View Case Studies
-              </Link>
-            </Button>
-          </div>
+          <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
+            <Link href="/contact">
+              Get Started Today
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </Button>
         </div>
       </section>
-
     </div>
   );
 }
