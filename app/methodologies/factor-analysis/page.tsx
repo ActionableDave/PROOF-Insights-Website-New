@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,8 +32,16 @@ export default function FactorAnalysisPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24"
+               style={{
+                 backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/fwP-s8G8B-1crWVYho9k1/factor-analysis.png')`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundRepeat: 'no-repeat'
+               }}>
+        {/* 65% White Overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <BarChart3 className="w-4 h-4 mr-1" />
@@ -40,18 +51,16 @@ export default function FactorAnalysisPage() {
               Factor Analysis &
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Statistical Discovery</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Uncover hidden patterns and relationships in your data to reveal the underlying factors 
               that drive customer behavior, preferences, and decision-making processes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Search className="w-5 h-5 mr-2" />
-                Start Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Activity className="w-5 h-5 mr-2" />
-                View Examples
+              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
+                <a href="/contact">
+                  <Search className="w-5 h-5 mr-2" />
+                  Start Analysis
+                </a>
               </Button>
             </div>
           </div>
@@ -111,56 +120,11 @@ export default function FactorAnalysisPage() {
             </div>
 
             <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Factor Analysis Impact</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Data Insights</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <BarChart3 className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">87%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Variance Explained</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">65%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Data Reduction</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">250+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Variables Analyzed</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Search className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">150+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Studies Completed</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Model Reliability</span>
-                    <span className="font-medium text-proof-gray-900">93%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '93%'}}></div>
-                  </div>
-                </div>
-              </div>
+              <img 
+                src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/qhmvec4_LugLf-CdwkU1c/image.png"
+                alt="Factor Analysis Diagram showing motivation factors"
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
@@ -480,17 +444,23 @@ export default function FactorAnalysisPage() {
             underlying data structures and transforms complex information into strategic advantage.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Brain className="w-5 h-5 mr-2" />
-              Start Factor Analysis
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <PieChart className="w-5 h-5 mr-2" />
-              View Case Studies
-            </Button>
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Brain className="w-5 h-5 mr-2" />
+                Start Factor Analysis
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <PieChart className="w-5 h-5 mr-2" />
+                View Case Studies
+              </Button>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+

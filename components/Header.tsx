@@ -17,6 +17,9 @@ export default function Header() {
     {
       label: 'About PROOF',
       href: '/about',
+      subItems: [
+        { label: 'Privacy Policy', href: '/privacy' },
+      ]
     },
     {
       label: 'Solutions',
@@ -36,11 +39,11 @@ export default function Header() {
           label: 'Innovation and Growth', 
           href: '/solutions/innovation-growth',
           subItems: [
-            { label: 'Concept testing', href: '/solutions/innovation-growth/concept-testing' },
-            { label: 'Package testing', href: '/solutions/innovation-growth/package-testing' },
-            { label: 'Name testing', href: '/solutions/innovation-growth/name-testing' },
-            { label: 'Product testing', href: '/solutions/innovation-growth/product-testing' },
-            { label: 'Feature / Benefit testing', href: '/solutions/innovation-growth/feature-benefit-testing' },
+            { label: 'Concept Testing', href: '/solutions/innovation-growth/concept-testing' },
+            { label: 'Package Testing', href: '/solutions/innovation-growth/package-testing' },
+            { label: 'Name Testing', href: '/solutions/innovation-growth/name-testing' },
+            { label: 'Product Testing', href: '/solutions/innovation-growth/product-testing' },
+            { label: 'Feature / Benefit Testing', href: '/solutions/innovation-growth/feature-benefit-testing' },
             { label: 'Pricing', href: '/solutions/innovation-growth/pricing' },
           ]
         },
@@ -87,10 +90,10 @@ export default function Header() {
       href: '/methodologies',
       subItems: [
         { 
-          label: 'Features / Concepts and Price Optimization', 
+          label: 'Features and Concept Optimization', 
           href: '/methodologies/features-concepts-price-optimization',
           subItems: [
-            { label: 'Conjoint and ACBC', href: '/methodologies/conjoint-and-acbc' },
+            { label: 'Conjoint Analysis', href: '/methodologies/conjoint-and-acbc' },
             { label: 'Max Diff Scaling and Qsort', href: '/methodologies/max-diff-scaling' },
             { label: 'Kano Analysis', href: '/methodologies/kano-analysis' },
             { label: 'TURF Analysis', href: '/methodologies/turf-analysis' },
@@ -123,7 +126,7 @@ export default function Header() {
           subItems: [
             { label: 'Price Laddering', href: '/methodologies/price-laddering' },
             { label: 'Van Westendorp', href: '/methodologies/van-westendorp' },
-            { label: 'Conjoint and ACBC', href: '/methodologies/conjoint-and-acbc' },
+            { label: 'Conjoint Analysis', href: '/methodologies/conjoint-and-acbc' },
           ]
         },
       ]
@@ -388,3 +391,7 @@ export default function Header() {
     </header>
   )
 }
+
+
+
+

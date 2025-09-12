@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -32,8 +35,11 @@ export default function DriverAnalysisPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/JrBizC5NHI1tqhj4Zu-md/driver-analysis.png)'}}>
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <TrendingUp className="w-4 h-4 mr-1" />
@@ -41,21 +47,19 @@ export default function DriverAnalysisPage() {
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
               Driver Analysis
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Methodology</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]"><br /></span>
             </h1>
             <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
               Identify which features, attributes, or experiences have the greatest statistical impact 
               on key business outcomes through advanced correlation and regression modeling.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <TrendingUp className="w-5 h-5 mr-2" />
-                Start Driver Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Search className="w-5 h-5 mr-2" />
-                Discover Drivers
-              </Button>
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  Discover Your Drivers
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -64,24 +68,26 @@ export default function DriverAnalysisPage() {
       {/* Overview Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Uncover What Really Drives Performance
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Driver analysis uses sophisticated statistical modeling to identify which specific 
-                factors have the strongest correlation and causal relationship with key business 
-                metrics like satisfaction, loyalty, purchase intent, and revenue.
-              </p>
-              
+          {/* Header Section */}
+          <div className="text-center space-y-6 mb-16">
+            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
+              Methodology Overview
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Uncover What Really Drives Performance
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
+              Driver analysis uses sophisticated statistical modeling to identify which specific 
+              factors have the strongest correlation and causal relationship with key business 
+              metrics like satisfaction, loyalty, purchase intent, and revenue.
+            </p>
+          </div>
+
+          {/* Main Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-between">
               <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
+                <Card className="p-6 bg-white border-l-4 border-l-proof-blue-500 shadow-sm">
                   <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <BarChart3 className="h-5 w-5 text-white" />
@@ -96,7 +102,7 @@ export default function DriverAnalysisPage() {
                   </div>
                 </Card>
                 
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
+                <Card className="p-6 bg-white border-l-4 border-l-proof-emerald-500 shadow-sm">
                   <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Activity className="h-5 w-5 text-white" />
@@ -113,75 +119,12 @@ export default function DriverAnalysisPage() {
               </div>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Driver Analysis Impact</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Data-Driven Insights</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">91%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Model Accuracy</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Target className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">65%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Performance Improvement</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <DollarSign className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">$2.4M</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Avg ROI Impact</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Shield className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">220+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Driver Studies</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Strategic Confidence</span>
-                    <span className="font-medium text-proof-gray-900">96%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '96%'}}></div>
-                  </div>
-                </div>
-
-                <div className="bg-proof-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-proof-gray-900 mb-2">Key Outputs</h4>
-                  <ul className="space-y-1 text-sm text-proof-gray-600">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Impact rankings
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Priority recommendations
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      ROI projections
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div className="relative">
+              <img 
+                src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/xJyhCs9D6-Qkv37z1sanl/driver-analysis-graph.png"
+                alt="Driver Analysis matrix showing performance vs importance quadrants with various factors plotted"
+                className="w-full h-full rounded-lg object-cover"
+              />
             </div>
           </div>
         </div>
@@ -385,38 +328,22 @@ export default function DriverAnalysisPage() {
       {/* Business Applications */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-amber-100 text-proof-amber-700 border-proof-amber-200 px-4 py-2">
-                  Strategic Applications
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Transform Insights into Action
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Driver analysis provides the foundation for strategic decision-making by revealing 
-                which factors truly matter for business success, enabling focused resource allocation 
-                and maximum impact initiatives.
-              </p>
-              
+          {/* Header spanning full width */}
+          <div className="text-center space-y-6 mb-16">
+            <Badge className="bg-proof-amber-100 text-proof-amber-700 border-proof-amber-200 px-4 py-2">
+              Actionable Applications
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Transform Insights into Action
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+              Driver analysis provides the foundation for strategic decision-making by revealing which factors truly matter for your customers, providing evidence for change initiatives with measurable results.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-between">
               <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Settings className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Resource Prioritization</h3>
-                      <p className="text-proof-gray-600">
-                        Focus investments on high-impact areas by understanding which factors deliver 
-                        the greatest return on effort and budget allocation.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-                
                 <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -425,9 +352,20 @@ export default function DriverAnalysisPage() {
                     <div>
                       <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Strategic Planning</h3>
                       <p className="text-proof-gray-600">
-                        Develop data-driven strategies based on proven correlations between specific 
-                        actions and desired business outcomes.
-                      </p>
+                        Prior to allocating resources, the additional intelligence allows for the development of data-driven strategies based on proven correlations between specific actions and desired business outcomes.</p>
+                    </div>
+                  </div>
+                </Card>
+                
+                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Settings className="h-5 w-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Resource Prioritization</h3>
+                      <p className="text-proof-gray-600">
+                        With the strategic plan in place, leaders can focus investments on high-impact areas by understanding which factors deliver the greatest return on effort and budget allocation.</p>
                     </div>
                   </div>
                 </Card>
@@ -447,24 +385,19 @@ export default function DriverAnalysisPage() {
                   </div>
                 </Card>
               </div>
-
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                Discover Your Drivers
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
 
-            <div className="relative z-10 bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 rounded-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
+            <div className="bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 rounded-2xl p-8 border border-proof-gray-200 flex flex-col">
+              <div className="space-y-6 flex-1">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                    <BarChart3 className="h-10 w-10 text-proof-blue-600" />
+                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <BarChart3 className="h-8 w-8 text-proof-blue-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-proof-gray-900">Driver Analysis Framework</h3>
                   <p className="text-proof-gray-600 mt-2">Systematic approach to identifying performance drivers</p>
                 </div>
                 
-                <div className="space-y-4">
+                <div className="space-y-4 flex-1 flex flex-col justify-center">
                   <div className="bg-white rounded-lg p-4 shadow-sm">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-sm font-medium text-proof-gray-900">Data Collection</span>
@@ -505,12 +438,17 @@ export default function DriverAnalysisPage() {
                     </div>
                   </div>
                 </div>
-
-                <div className="bg-white rounded-lg p-4 text-center">
-                  <p className="text-proof-gray-600 font-medium">Ready to identify your performance drivers?</p>
-                </div>
               </div>
             </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <a href="/contact">
+              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                Discover Your Drivers
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -647,17 +585,23 @@ export default function DriverAnalysisPage() {
             the key factors driving your business success and guides strategic resource allocation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Brain className="w-5 h-5 mr-2" />
-              Start Driver Study
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <PieChart className="w-5 h-5 mr-2" />
-              See Analysis Examples
-            </Button>
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Brain className="w-5 h-5 mr-2" />
+                Start Driver Study
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <PieChart className="w-5 h-5 mr-2" />
+                See Analysis Examples
+              </Button>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+

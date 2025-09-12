@@ -473,6 +473,12 @@
     "keywords": "thought leadership, market research innovation, research trends, industry leadership, research expertise",
     "ogImage": "https://proofinsights.com/og-image-thought-leadership.png"
   },
+  "/resources/thought-leadership/latent-class-modeling-guide": {
+    "title": "Advanced Latent Class Modeling Guide | White Paper | PROOF Insights",
+    "description": "Comprehensive white paper on latent class modeling - uncover hidden customer segments and behavioral patterns with sophisticated statistical modeling that reveals true preferences beyond demographics.",
+    "keywords": "latent class modeling, customer segmentation, behavioral segmentation, statistical modeling, market research methodology, preference heterogeneity, conjoint analysis",
+    "ogImage": "https://proofinsights.com/og-image-latent-class-guide.png"
+  },
   "/resources/white-papers-ebooks": {
     "title": "White Papers & eBooks | In-Depth Market Research Guides",
     "description": "Download comprehensive white papers and eBooks covering advanced market research methodologies, industry insights, and strategic guidance.",
@@ -496,6 +502,14 @@
     "description": "How a global oxygen therapy company evaluated market opportunities for Long-Term Oxygen Therapy (LTOT) solutions through comprehensive market sizing and strategic assessment.",
     "keywords": "LTOT market sizing, oxygen therapy market research, healthcare market analysis, medical device market sizing, strategic assessment",
     "ogImage": "https://proofinsights.com/og-image-ltot-case-study.png"
+  },
+  "/privacy": {
+    "title": "Privacy Policy | PROOF Insights Data Protection & Security",
+    "description": "Learn about PROOF Insights' commitment to privacy and data protection. Our comprehensive privacy policy outlines how we collect, use, and protect your personal information in market research.",
+    "keywords": "privacy policy, data protection, survey privacy, market research privacy, data security, COPPA compliance",
+    "ogImage": "https://proofinsights.com/og-image-privacy.png"
   }
 }
+
+
 

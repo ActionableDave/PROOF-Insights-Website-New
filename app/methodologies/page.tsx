@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -67,8 +66,8 @@ export default function MethodologiesPage() {
           
           {/* Additional Context */}
           <div className="max-w-4xl mx-auto text-center mt-16">
-            <p className="text-lg text-black leading-relaxed">
-              From a basic perspective, knowing whether qualitative or quantitative research is the best fit for any particular research effort requires experience and may not be as simple a question as it seems. Often both of these methods are used and in varying order depending on research goals and endpoints.</p>
+            <p className="text-black leading-relaxed text-lg text-left">
+              From a basic perspective, knowing whether qualitative or quantitative research is the best fit for any particular research effort requires experience and may not be as simple a question as it seems. Often both of these methods are used and in varying order depending on research goals and endpoints.<br /><br /> PROOF Insights can deliver on both modalities and only recommend the option that best fits our client's specific needs. </p>
           </div>
         </div>
       </section>
@@ -152,13 +151,12 @@ export default function MethodologiesPage() {
           <div className="grid lg:grid-cols-3 gap-8">
             <Card className="p-8 bg-gradient-to-br from-blue-50 to-purple-50 border-0">
               <Brain className="h-12 w-12 text-black mb-6" />
-              <h3 className="text-xl font-semibold text-black mb-4">Generative AI</h3>
+              <h3 className="text-xl font-semibold text-black mb-4">Generative AI Efficiencies</h3>
               <p className="text-black mb-4">
-                Custom and state of the art AI tools and agents to uncover hidden insights in your data.
-              </p>
+                Custom and state of the art AI tools and agents to increase the utility of our experience.</p>
               <ul className="text-sm text-black space-y-1">
                 <li>• Pattern Discovery</li>
-                <li>• Rapid Coding</li>
+                <li>• Advanced Classification</li>
                 <li>• Committed to AI Innovation</li>
               </ul>
             </Card>
@@ -263,5 +261,8 @@ export default function MethodologiesPage() {
     </div>
   )
 }
+
+
+
 
 

@@ -58,6 +58,14 @@ export default function ThoughtLeadershipPage() {
 
   const recentPublications = [
     {
+      title: 'Advanced Latent Class Modeling: A Comprehensive Guide',
+      type: 'White Paper',
+      description: 'Uncover hidden customer segments and behavioral patterns with sophisticated statistical modeling that reveals true preferences beyond demographics.',
+      date: '2024',
+      icon: BookOpen,
+      href: '/resources/thought-leadership/latent-class-modeling-guide'
+    },
+    {
       title: 'The Future of Market Research: AI and Human Insight Integration',
       type: 'White Paper',
       description: 'How the combination of artificial intelligence and human expertise is reshaping market research methodologies.',

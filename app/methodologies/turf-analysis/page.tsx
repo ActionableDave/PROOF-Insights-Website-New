@@ -31,8 +31,19 @@ export default function TurfAnalysisPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-teal-50 to-proof-blue-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="relative py-24"
+        style={{
+          backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/0TffX-2h2OhRT0ZN9rTFm/turf.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* 65% White Overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-teal-100 text-proof-teal-700 border-proof-teal-200 hover:bg-proof-teal-100">
               <Target className="w-4 h-4 mr-1" />
@@ -42,19 +53,17 @@ export default function TurfAnalysisPage() {
               TURF Analysis
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-teal-600 to-proof-blue-600 block">Total Unduplicated Reach & Frequency</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Optimize product portfolios and feature sets by maximizing market coverage 
               while minimizing cannibalization and redundancy across offerings.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-teal-600 hover:bg-proof-teal-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Target className="w-5 h-5 mr-2" />
-                Start TURF Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Maximize className="w-5 h-5 mr-2" />
-                Optimize Portfolio
-              </Button>
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-teal-600 hover:bg-proof-teal-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Target className="w-5 h-5 mr-2" />
+                  Start TURF Analysis
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -63,124 +72,63 @@ export default function TurfAnalysisPage() {
       {/* TURF Overview */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header Section */}
+          <div className="text-center space-y-6 mb-16">
+            <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
+              Methodology Overview
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Maximize Coverage, Minimize Overlap
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
+              TURF (Total Unduplicated Reach and Frequency) analysis determines the optimal 
+              combination of products, features, or communications that reaches the maximum 
+              number of target customers with minimal redundancy.
+            </p>
+          </div>
+
+          {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Maximize Coverage, Minimize Overlap
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                TURF (Total Unduplicated Reach and Frequency) analysis determines the optimal 
-                combination of products, features, or communications that reaches the maximum 
-                number of target customers with minimal redundancy.
-              </p>
+            <div className="space-y-6">
+              <Card className="p-6 bg-white border-l-4 border-l-proof-teal-500 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Maximize className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Total Unduplicated Reach</h3>
+                    <p className="text-proof-gray-600">
+                      Measures the total percentage of the target market 
+                      that would be appealed to by at least one product in 
+                      the portfolio combination.
+                    </p>
+                  </div>
+                </div>
+              </Card>
               
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-teal-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Maximize className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Total Unduplicated Reach</h3>
-                      <p className="text-proof-gray-600">
-                        Measures the total percentage of the target market that would be appealed 
-                        to by at least one product in the portfolio combination.
-                      </p>
-                    </div>
+              <Card className="p-6 bg-white border-l-4 border-l-proof-blue-500 shadow-sm">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Activity className="h-5 w-5 text-white" />
                   </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Activity className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Frequency Distribution</h3>
-                      <p className="text-proof-gray-600">
-                        Analyzes how many products appeal to each customer segment, revealing 
-                        overlap patterns and potential cannibalization effects.
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Frequency Distribution</h3>
+                    <p className="text-proof-gray-600">
+                      Analyzes how many products appeal to each 
+                      customer segment, revealing overlap patterns and 
+                      potential cannibalization effects.
+                    </p>
                   </div>
-                </Card>
-              </div>
+                </div>
+              </Card>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">TURF Analysis Impact</h3>
-                  <Badge className="bg-proof-teal-100 text-proof-teal-700">Portfolio Optimized</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Target className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">89%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Market Coverage</p>
-                  </div>
-                  
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">42%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Efficiency Improvement</p>
-                  </div>
-
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Shield className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">27%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Cannibalization Reduction</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Layers className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">160+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Portfolios Optimized</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Optimization Success Rate</span>
-                    <span className="font-medium text-proof-gray-900">93%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-teal-500 to-proof-blue-500 h-2 rounded-full" style={{width: '93%'}}></div>
-                  </div>
-                </div>
-
-                <div className="bg-proof-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-proof-gray-900 mb-2">Key Metrics</h4>
-                  <ul className="space-y-1 text-sm text-proof-gray-600">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Maximum market reach
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Minimal product overlap
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Optimal resource allocation
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div className="relative">
+              <img 
+                src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/XxUCDeVsqWTxMaMxw2_KD/image.png"
+                alt="TURF Analysis - Total Unduplicated Reach & Frequency showing ice cream flavor combinations with reach percentages"
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
@@ -514,3 +462,5 @@ export default function TurfAnalysisPage() {
     </div>
   );
 }
+
+
