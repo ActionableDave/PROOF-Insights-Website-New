@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,6 +22,7 @@ import {
   Calendar,
   Layers
 } from "lucide-react";
+import Link from "next/link";
 
 export default function AwarenessUsagePage() {
   console.log("Awareness & Usage page rendered");
@@ -319,14 +321,23 @@ export default function AwarenessUsagePage() {
             reveals market opportunities and guides strategic marketing and product decisions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Users className="w-5 h-5 mr-2" />
-              Start Tracking
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Users className="w-5 h-5 mr-2" />
+                Start Tracking
+              </Button>
+            </Link>
+            <Link href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <BarChart3 className="w-5 h-5 mr-2" />
+                View Tracking Examples
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
 

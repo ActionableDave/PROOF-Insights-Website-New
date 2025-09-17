@@ -1,3 +1,6 @@
+
+
+
 {
   "/": {
     "title": "PROOF Insights | Custom Market Research & Strategic Analytics",
@@ -419,6 +422,12 @@
     "keywords": "competitive landscape, competitive analysis, market intelligence, competitor research, strategic analysis",
     "ogImage": "https://proofinsights.com/og-image-competitive-landscape.png"
   },
+  "/methodologies/expectancy-analysis": {
+    "title": "Expectancy Analysis | Double Centered Data Rescaling Research",
+    "description": "Expectancy Analysis methodology that removes halo effects and cost of entry biases to reveal true brand performance and competitive positioning insights.",
+    "keywords": "expectancy analysis, double centered data, halo effect, cost of entry, brand performance, competitive analysis, bias removal",
+    "ogImage": "https://proofinsights.com/og-image-expectancy-analysis.png"
+  },
   "/methodologies/database-modeling": {
     "title": "Database Modeling | Customer Data Analysis & Segmentation",
     "description": "Database modeling techniques for customer data analysis, behavioral segmentation, and predictive analytics using existing customer databases.",
@@ -443,11 +452,11 @@
     "keywords": "feature optimization, concept testing, price optimization, integrated research, product development",
     "ogImage": "https://proofinsights.com/og-image-integrated.png"
   },
-  "/methodologies/price-laddering": {
-    "title": "Price Laddering | Sequential Pricing Research Methodology",
-    "description": "Price laddering methodology to understand price sensitivity across different price points and optimize pricing strategies.",
-    "keywords": "price laddering, pricing research, price sensitivity, pricing methodology, sequential pricing",
-    "ogImage": "https://proofinsights.com/og-image-price-laddering.png"
+  "/methodologies/gabor-granger": {
+    "title": "Gabor Granger Price Wheel | Sequential Pricing Research Methodology",
+    "description": "Gabor Granger price wheel methodology to understand price sensitivity across different price points and optimize pricing strategies through systematic sequential testing.",
+    "keywords": "Gabor Granger, price wheel, pricing research, price sensitivity, pricing methodology, sequential pricing",
+    "ogImage": "https://proofinsights.com/og-image-gabor-granger.png"
   },
   "/resources": {
     "title": "Market Research Resources | Insights, Case Studies & Thought Leadership",
@@ -473,6 +482,12 @@
     "keywords": "thought leadership, market research innovation, research trends, industry leadership, research expertise",
     "ogImage": "https://proofinsights.com/og-image-thought-leadership.png"
   },
+  "/resources/thought-leadership/latent-class-modeling-guide": {
+    "title": "Advanced Latent Class Modeling Guide | White Paper | PROOF Insights",
+    "description": "Comprehensive white paper on latent class modeling - uncover hidden customer segments and behavioral patterns with sophisticated statistical modeling that reveals true preferences beyond demographics.",
+    "keywords": "latent class modeling, customer segmentation, behavioral segmentation, statistical modeling, market research methodology, preference heterogeneity, conjoint analysis",
+    "ogImage": "https://proofinsights.com/og-image-latent-class-guide.png"
+  },
   "/resources/white-papers-ebooks": {
     "title": "White Papers & eBooks | In-Depth Market Research Guides",
     "description": "Download comprehensive white papers and eBooks covering advanced market research methodologies, industry insights, and strategic guidance.",
@@ -496,6 +511,17 @@
     "description": "How a global oxygen therapy company evaluated market opportunities for Long-Term Oxygen Therapy (LTOT) solutions through comprehensive market sizing and strategic assessment.",
     "keywords": "LTOT market sizing, oxygen therapy market research, healthcare market analysis, medical device market sizing, strategic assessment",
     "ogImage": "https://proofinsights.com/og-image-ltot-case-study.png"
+  },
+  "/privacy": {
+    "title": "Privacy Policy | PROOF Insights Data Protection & Security",
+    "description": "Learn about PROOF Insights' commitment to privacy and data protection. Our comprehensive privacy policy outlines how we collect, use, and protect your personal information in market research.",
+    "keywords": "privacy policy, data protection, survey privacy, market research privacy, data security, COPPA compliance",
+    "ogImage": "https://proofinsights.com/og-image-privacy.png"
   }
 }
+
+
+
+
+
 

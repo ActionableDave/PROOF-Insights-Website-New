@@ -65,9 +65,9 @@ export default function MaxDiffScalingPage() {
                 </Button>
               </Link>
               <Link href="/resources/case-studies">
-                <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                  <Activity className="w-5 h-5 mr-2" />
-                  See Applications
+                <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <PieChart className="w-5 h-5 mr-2" />
+                  Explore Applications
                 </Button>
               </Link>
             </div>
@@ -491,7 +491,7 @@ export default function MaxDiffScalingPage() {
               </Button>
             </Link>
             <Link href="/resources/case-studies">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-emerald-600 px-8 py-4 text-lg">
+              <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
                 <PieChart className="w-5 h-5 mr-2" />
                 Explore Applications
               </Button>
@@ -502,4 +502,5 @@ export default function MaxDiffScalingPage() {
     </div>
   );
 }
+
 

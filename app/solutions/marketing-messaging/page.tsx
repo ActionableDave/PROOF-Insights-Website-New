@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -253,9 +254,14 @@ export default function MarketingMessagingPage() {
               Let our marketing research experts help you create more effective campaigns, 
               improve your messaging, and maximize your marketing ROI.
             </p>
-            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-100 px-8 py-3 text-lg font-semibold" asChild>
-              <Link href="/contact">Start Your Marketing Research</Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-3 text-lg font-semibold" asChild>
+                <Link href="/contact">Start Your Marketing Research</Link>
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-3 text-lg font-semibold" asChild>
+                <Link href="/resources/case-studies">View Case Studies</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -263,3 +269,4 @@ export default function MarketingMessagingPage() {
     </div>
   )
 }
+

@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -356,13 +357,14 @@ export default function MarketDiscoveryOpportunityPage() {
               <Search className="w-5 h-5 mr-2" />
               Start Market Discovery
             </Link>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
+            <Link href="/resources/case-studies" className="inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md">
               <FileText className="w-5 h-5 mr-2" />
               Download Case Studies
-            </Button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+

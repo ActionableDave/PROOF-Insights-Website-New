@@ -29,25 +29,25 @@ export default function PackageTestingPage() {
       
       {/* Hero Section */}
       <section className="relative py-24 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://assets.macaly-user-data.dev/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/lYI0WNMOoJVWS6px8W7Ur/packagetesting.jpg)'}}>
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        {/* White overlay for text readability */}
+        <div className="absolute inset-0 bg-white/75"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-white/90 text-proof-blue-700 border-proof-blue-200 hover:bg-white/95">
               <Package className="w-4 h-4 mr-1" />
               Innovation Research
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold text-black leading-tight">
               Package
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-400 to-proof-emerald-400 block leading-[1.2]">Testing</span>
             </h1>
-            <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Your package is often the first and only chance to communicate with potential customers
               at the point of purchase. Our package testing ensures your design stands out on the shelf,
               communicates your brand effectively, and drives purchase decisions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Link href="/contact" className="inline-flex items-center justify-center bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md">
+              <Link href="/contact" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
                 <Search className="w-5 h-5 mr-2" />
                 Test Your Package
               </Link>
@@ -320,17 +320,17 @@ export default function PackageTestingPage() {
             communicates your brand effectively, and drives purchase decisions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
               <Eye className="w-5 h-5 mr-2" />
               Start Package Testing
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <BarChart3 className="w-5 h-5 mr-2" />
-              View Design Examples
-            </Button>
+            </Link>
+            <Link href="/resources/case-studies" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
+              <BarChart3 className="w-5 h-5 mr-2" />View Project Examples</Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+

@@ -1,5 +1,6 @@
 
 
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -59,6 +60,10 @@ export default function CompetitiveLandscapePage() {
               <Link href="/contact" className="inline-flex items-center justify-center bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md">
                 <Eye className="w-5 h-5 mr-2" />
                 Start Competitive Analysis
+              </Link>
+              <Link href="/resources/case-studies" className="inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md">
+                <BarChart3 className="w-5 h-5 mr-2" />
+                View Case Studies
               </Link>
             </div>
           </div>
@@ -283,4 +288,5 @@ export default function CompetitiveLandscapePage() {
     </div>
   );
 }
+
 

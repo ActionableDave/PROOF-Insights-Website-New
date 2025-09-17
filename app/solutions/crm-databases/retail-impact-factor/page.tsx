@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { CheckCircle, Target, TrendingUp, BarChart3, ArrowRight, Zap, Store, Users, ShoppingCart } from 'lucide-react'
+import Link from 'next/link'
 
 export default function RetailImpactFactorPage() {
   console.log("Retail Impact Factor page rendered")
@@ -292,11 +293,17 @@ export default function RetailImpactFactorPage() {
             Start measuring and improving your retail strategies with comprehensive impact factor analysis 
             tailored to your business objectives.
           </p>
-          <Button size="lg" className="bg-white text-proof-purple-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-            Schedule Your Retail Impact Analysis
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-proof-purple-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
+              <Link href="/contact">Schedule Your Retail Impact Analysis</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-purple-600 px-8 py-4 text-lg" asChild>
+              <Link href="/resources/case-studies">View Case Studies</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>
   )
 }
+

@@ -406,11 +406,21 @@ export default function PredictiveModelingPage() {
             Harness the power of predictive modeling to anticipate customer behaviors, optimize strategies, 
             and drive sustainable business growth with data-driven insights.
           </p>
-          <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-            Start Building Predictive Models
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                Start Building Predictive Models
+              </Button>
+            </Link>
+            <Link href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                View Predictive Modeling Case Studies
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
   )
 }
+

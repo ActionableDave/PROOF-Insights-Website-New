@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import Header from '@/components/Header'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -72,7 +61,7 @@ export default function InnovationGrowthPage() {
                 </Button>
               </div>
               <Link href="/resources/case-studies/flosser-oral-care-innovation">
-                <Card className="p-8 bg-gradient-to-br from-blue-50 to-green-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
+                <Card className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
                       <Droplet className="h-8 w-8 text-proof-blue-600" />
@@ -204,7 +193,7 @@ export default function InnovationGrowthPage() {
                 </Button>
               </div>
               <Link href="/resources/case-studies/jeans-fit-naming-preferences">
-                <Card className="p-8 bg-gradient-to-br from-indigo-50 to-purple-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
+                <Card className="p-8 bg-gradient-to-br from-green-50 to-green-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
                       <Type className="h-8 w-8 text-proof-green-600" />
@@ -253,7 +242,7 @@ export default function InnovationGrowthPage() {
             {/* Product Testing */}
             <div id="product-testing" className="grid lg:grid-cols-2 gap-12 items-center">
               <Link href="/resources/case-studies/mens-jeans-wear-test">
-                <Card className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full lg:order-1">
+                <Card className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full lg:order-1">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
                       <Users className="h-8 w-8 text-proof-blue-600" />
@@ -298,7 +287,7 @@ export default function InnovationGrowthPage() {
                 </Card>
               </Link>
               <div className="lg:order-2">
-                <TestTube className="h-12 w-12 text-proof-amber-600 mb-6" />
+                <TestTube className="h-12 w-12 text-proof-blue-600 mb-6" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Product Testing</h3>
                 <p className="text-lg text-gray-600 mb-6">
                   Ensure your product meets market expectations before launch. Our product testing evaluates performance, usability, and market potential through real user experiences.
@@ -310,7 +299,7 @@ export default function InnovationGrowthPage() {
                   <li>• Sensory and usability testing</li>
                   <li>• Optimization recommendations</li>
                 </ul>
-                <Button className="bg-proof-amber-600 hover:bg-proof-amber-700 text-white" asChild>
+                <Button className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white" asChild>
                   <Link href="/solutions/innovation-growth/product-testing">Discover Product Testing</Link>
                 </Button>
               </div>
@@ -336,7 +325,7 @@ export default function InnovationGrowthPage() {
                 </Button>
               </div>
               <Link href="/resources/case-studies/smart-gym-claims-test">
-                <Card className="p-8 bg-gradient-to-br from-purple-50 to-blue-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
+                <Card className="p-8 bg-gradient-to-br from-green-50 to-green-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
                       <Target className="h-8 w-8 text-proof-green-600" />
@@ -385,21 +374,21 @@ export default function InnovationGrowthPage() {
             {/* Feature/Benefit Testing */}
             <div id="feature-benefit-testing" className="grid lg:grid-cols-2 gap-12 items-center">
               <Link href="/resources/case-studies/expert-reviews-app-features">
-                <Card className="p-8 bg-gradient-to-br from-indigo-50 to-purple-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full lg:order-1">
+                <Card className="p-8 bg-gradient-to-br from-amber-50 to-amber-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full lg:order-1">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
-                      <Smartphone className="h-8 w-8 text-proof-purple-600" />
+                      <Smartphone className="h-8 w-8 text-proof-amber-600" />
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-wrap gap-2 mb-3">
-                        <Badge className="bg-proof-purple-100 text-proof-purple-700 hover:bg-proof-purple-200">
+                        <Badge className="bg-proof-amber-100 text-proof-amber-700 hover:bg-proof-amber-200">
                           Digital Media/Publications
                         </Badge>
-                        <Badge className="bg-proof-purple-100 text-proof-purple-700 hover:bg-proof-purple-200">
+                        <Badge className="bg-proof-amber-100 text-proof-amber-700 hover:bg-proof-amber-200">
                           Feature Testing
                         </Badge>
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-proof-purple-600 transition-colors">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-proof-amber-600 transition-colors">
                         Expert Reviews App Feature Testing
                       </h3>
                     </div>
@@ -422,10 +411,10 @@ export default function InnovationGrowthPage() {
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600 font-medium group-hover:text-proof-purple-600">
+                    <span className="text-gray-600 font-medium group-hover:text-proof-amber-600">
                       Read Full Case Study
                     </span>
-                    <ArrowRight className="h-5 w-5 text-proof-purple-600 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="h-5 w-5 text-proof-amber-600 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Card>
               </Link>
@@ -468,7 +457,7 @@ export default function InnovationGrowthPage() {
                 </Button>
               </div>
               <Link href="/resources/case-studies/streaming-service-pricing">
-                <Card className="p-8 bg-gradient-to-br from-purple-50 to-blue-50 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
+                <Card className="p-8 bg-gradient-to-br from-green-50 to-green-100 border-0 hover:shadow-lg transition-all duration-300 cursor-pointer group h-full">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="p-3 bg-white rounded-lg shadow-sm">
                       <Play className="h-8 w-8 text-proof-green-600" />
@@ -518,7 +507,7 @@ export default function InnovationGrowthPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-proof-blue-600 to-proof-purple-600">
+      <section className="py-20 bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Accelerate Your Innovation?
@@ -527,11 +516,11 @@ export default function InnovationGrowthPage() {
             Let's discuss how our innovation research can help you develop products that customers love and markets demand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-100 px-8 py-3 text-lg font-semibold" asChild>
-              <a href="/contact">Schedule Innovation Consultation</a>
+            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-3 text-lg font-semibold" asChild>
+              <Link href="/contact">Schedule Innovation Consultation</Link>
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-3 text-lg font-semibold" asChild>
-              <a href="/resources/case-studies">View Innovation Case Studies</a>
+            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-3 text-lg font-semibold" asChild>
+              <Link href="/resources/case-studies">View Case Studies</Link>
             </Button>
           </div>
         </div>
@@ -539,3 +528,10 @@ export default function InnovationGrowthPage() {
     </div>
   )
 }
+
+
+
+
+
+
+

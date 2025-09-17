@@ -29,8 +29,17 @@ export default function UnderstandingAudiencePage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24"
+               style={{
+                 backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/gRu9DiU2oN9cN4NkVCgpi/understanding-audience.png')`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundRepeat: 'no-repeat'
+               }}>
+        {/* 65% White Overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 hover:bg-proof-emerald-100">
               <Users className="w-4 h-4 mr-1" />
@@ -40,21 +49,15 @@ export default function UnderstandingAudiencePage() {
               Understanding Your 
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Audience</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Advanced analytical methodologies that reveal deep audience insights, behavioral patterns, 
               and segmentation strategies to drive targeted marketing and product development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
-                <Link href="#factor-analysis">
+                <Link href="/contact">
                   <Search className="w-5 h-5 mr-2" />
                   Discover Methods
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg" asChild>
-                <Link href="#customer-segmentation">
-                  <Users className="w-5 h-5 mr-2" />
-                  View Applications
                 </Link>
               </Button>
             </div>
@@ -115,7 +118,7 @@ export default function UnderstandingAudiencePage() {
                 </div>
                 <div className="pt-4">
                   <Button className="w-full bg-proof-blue-600 hover:bg-proof-blue-700 text-white" asChild>
-                    <Link href="/methodologies/understanding-audience/factor-analysis">
+                    <Link href="/methodologies/factor-analysis">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -159,7 +162,7 @@ export default function UnderstandingAudiencePage() {
                 </div>
                 <div className="pt-4">
                   <Button className="w-full bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white" asChild>
-                    <Link href="/methodologies/understanding-audience/cluster-analysis">
+                    <Link href="/methodologies/cluster-analysis">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -203,7 +206,7 @@ export default function UnderstandingAudiencePage() {
                 </div>
                 <div className="pt-4">
                   <Button className="w-full bg-proof-amber-600 hover:bg-proof-amber-700 text-white" asChild>
-                    <Link href="/methodologies/understanding-audience/latent-class-modeling">
+                    <Link href="/methodologies/latent-class-modeling">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -247,7 +250,7 @@ export default function UnderstandingAudiencePage() {
                 </div>
                 <div className="pt-4">
                   <Button className="w-full bg-proof-teal-600 hover:bg-proof-teal-700 text-white" asChild>
-                    <Link href="/methodologies/understanding-audience/database-modeling">
+                    <Link href="/methodologies/database-modeling">
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -368,130 +371,66 @@ export default function UnderstandingAudiencePage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
-                  Strategic Advantages
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Transform Customer Understanding
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Advanced audience analysis methodologies provide the deep insights needed 
-                to create more effective strategies, improve customer experiences, and drive business growth.
-              </p>
-              
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Search className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Deeper Insights</h3>
-                      <p className="text-proof-gray-600">
-                        Uncover hidden patterns and motivations that traditional analysis methods 
-                        often miss, providing a more complete understanding of your audience.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Target className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Precision Targeting</h3>
-                      <p className="text-proof-gray-600">
-                        Create highly targeted strategies based on statistically validated segments 
-                        that improve campaign effectiveness and resource allocation.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-amber-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <TrendingUp className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Predictive Power</h3>
-                      <p className="text-proof-gray-600">
-                        Build models that not only explain current behavior but predict future 
-                        actions, enabling proactive business strategies and decision-making.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </div>
-
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
-                <Link href="/contact">
-                  Learn More About Our Approach
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Analysis Impact</h3>
-                  <Badge className="bg-proof-emerald-100 text-proof-emerald-700">Live Data</Badge>
+          <div className="text-center space-y-8 mb-16">
+            <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
+              Strategic Advantages
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Transform Customer Understanding
+            </h2>
+            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+              Advanced audience analysis methodologies provide the deep insights needed 
+              to create more effective strategies, improve customer experiences, and drive business growth.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start space-x-4">
+                <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Search className="h-5 w-5 text-white" />
                 </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <BarChart3 className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">89%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Segmentation Accuracy</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">3.5x</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Campaign Performance</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">12K+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Profiles Analyzed</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Database className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">94%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Model Reliability</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Audience Understanding</span>
-                    <span className="font-medium text-proof-gray-900">95%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '95%'}}></div>
-                  </div>
+                <div>
+                  <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Deeper Insights</h3>
+                  <p className="text-proof-gray-600">
+                    Uncover hidden patterns and motivations that traditional analysis methods 
+                    often miss, providing a more complete understanding of your audience.
+                  </p>
                 </div>
               </div>
-            </div>
+            </Card>
+            
+            <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start space-x-4">
+                <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Target className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Precision Targeting</h3>
+                  <p className="text-proof-gray-600">
+                    Create highly targeted strategies based on statistically validated segments 
+                    that improve campaign effectiveness and resource allocation.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-amber-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-start space-x-4">
+                <div className="w-10 h-10 bg-proof-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Predictive Power</h3>
+                  <p className="text-proof-gray-600">
+                    Build models that not only explain current behavior but predict future 
+                    actions, enabling proactive business strategies and decision-making.
+                  </p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -507,13 +446,13 @@ export default function UnderstandingAudiencePage() {
             deep audience insights and drive more effective business strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
+            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
               <Link href="/contact">
                 <Brain className="w-5 h-5 mr-2" />
                 Start Your Analysis
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg" asChild>
+            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
               <Link href="/resources/case-studies">
                 <PieChart className="w-5 h-5 mr-2" />
                 See Success Stories
@@ -526,3 +465,6 @@ export default function UnderstandingAudiencePage() {
     </div>
   );
 }
+
+
+

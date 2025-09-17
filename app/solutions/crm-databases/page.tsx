@@ -250,7 +250,7 @@ export default function CrmDatabasesPage() {
             Let's discuss how our CRM analytics solutions can help you unlock customer insights and drive sustainable business growth through data-driven strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-proof-purple-600 hover:bg-proof-gray-100 px-8 py-3 text-lg font-semibold" asChild>
+            <Button className="bg-white text-proof-purple-600 hover:bg-proof-gray-50 px-8 py-3 text-lg font-semibold" asChild>
               <Link href="/contact">Schedule CRM Analytics Consultation</Link>
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-proof-purple-600 px-8 py-3 text-lg font-semibold" asChild>
@@ -262,3 +262,4 @@ export default function CrmDatabasesPage() {
     </div>
   )
 }
+

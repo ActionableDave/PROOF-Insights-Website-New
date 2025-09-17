@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,9 +35,9 @@ export default function NameTestingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-24 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://assets.macaly-user-data.dev/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/La8Wbq9Q5XQGi0R7AOS6f/stock-photo-magnifier-with-text-name-on-chart-background-1902482611.jpg)'}}>
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative py-24 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/91lElpfVF9P1Q-gYf6ZKi/feature-benefit.png)'}}>
+        {/* White overlay for text readability */}
+        <div className="absolute inset-0 bg-white/75"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-white/90 text-proof-blue-700 border-proof-blue-200 hover:bg-white/90">
@@ -39,9 +46,9 @@ export default function NameTestingPage() {
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
               Name
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-300 to-proof-emerald-300 block leading-[1.2]">Testing</span>
+              <span className="text-white block leading-[1.2]">Testing</span>
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
               Choose the perfect name for your product or brand. Our name testing evaluates memorability, 
               appeal, and market potential across your target audience to ensure optimal naming decisions.
             </p>
@@ -65,10 +72,10 @@ export default function NameTestingPage() {
             <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
               Testing Overview
             </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black">
               Strategic Name Selection
             </h2>
-            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-black max-w-3xl mx-auto">
               Your name is one of your most valuable brand assets. It needs to be memorable, meaningful, 
               and marketable. Our name testing ensures you choose a name that resonates with your target 
               audience, supports your brand positioning, and works across all markets.
@@ -83,7 +90,7 @@ export default function NameTestingPage() {
                     <Star className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Memorability & Recall Testing</h3>
+                    <h3 className="font-bold text-black mb-2 text-lg">Memorability & Recall Testing</h3>
                     <p className="text-proof-gray-600">
                       Comprehensive testing of name memorability and recall to ensure your 
                       name sticks in customers' minds and builds lasting brand recognition.
@@ -98,7 +105,7 @@ export default function NameTestingPage() {
                     <Target className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Brand Fit & Positioning</h3>
+                    <h3 className="font-bold text-black mb-2 text-lg">Brand Fit & Positioning</h3>
                     <p className="text-proof-gray-600">
                       Evaluate how well potential names align with your brand strategy, 
                       positioning, and desired brand associations among target audiences.
@@ -127,10 +134,10 @@ export default function NameTestingPage() {
               <BarChart3 className="h-4 w-4 mr-2" />
               Testing Framework
             </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black">
               Comprehensive Name Evaluation
             </h2>
-            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-black max-w-3xl mx-auto">
               Our name testing methodology evaluates every critical aspect of naming 
               to ensure you select a name that drives brand success.
             </p>
@@ -142,14 +149,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Star className="h-8 w-8 text-proof-blue-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Memorability Testing</CardTitle>
+                <CardTitle className="text-xl text-black">Memorability Testing</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Comprehensive testing of name memorability and recall 
                   across different time intervals and contexts.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Immediate recall
@@ -171,14 +178,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-proof-emerald-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Brand Fit Assessment</CardTitle>
+                <CardTitle className="text-xl text-black">Brand Fit Assessment</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Evaluate how well potential names align with your brand 
                   strategy, values, and desired market positioning.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Brand alignment
@@ -200,14 +207,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Type className="h-8 w-8 text-proof-amber-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Pronunciation & Spelling</CardTitle>
+                <CardTitle className="text-xl text-black">Pronunciation & Spelling</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Assess ease of pronunciation and spelling accuracy 
                   to ensure broad accessibility and usability.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Pronunciation ease
@@ -229,14 +236,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-teal-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Globe className="h-8 w-8 text-proof-teal-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Cultural Validation</CardTitle>
+                <CardTitle className="text-xl text-black">Cultural Validation</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Comprehensive cultural and linguistic validation 
                   to ensure appropriate meaning across markets.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Cultural appropriateness
@@ -258,14 +265,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Search className="h-8 w-8 text-proof-blue-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Availability Check</CardTitle>
+                <CardTitle className="text-xl text-black">Availability Check</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Comprehensive trademark and domain availability 
                   assessment to ensure legal protection options.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Trademark search
@@ -287,14 +294,14 @@ export default function NameTestingPage() {
                 <div className="w-16 h-16 bg-proof-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-proof-emerald-600" />
                 </div>
-                <CardTitle className="text-xl text-proof-gray-900">Audience Reaction</CardTitle>
+                <CardTitle className="text-xl text-black">Audience Reaction</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-proof-gray-600">
                   Measure target audience reactions and emotional 
                   associations with potential name options.
                 </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
+                <div className="space-y-2 text-sm text-black">
                   <div className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
                     Emotional response
@@ -320,7 +327,7 @@ export default function NameTestingPage() {
           <h2 className="text-3xl lg:text-4xl font-bold text-white">
             Ready to Find the Perfect Name?
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Partner with PROOF Insights to test and validate your naming options, ensuring you choose 
             a name that resonates with your audience and supports your brand success.
           </p>
@@ -329,9 +336,27 @@ export default function NameTestingPage() {
               <Search className="w-5 h-5 mr-2" />
               Start Name Testing
             </Link>
+            <Link href="/resources/case-studies" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md">
+              <BarChart3 className="w-5 h-5 mr-2" />
+              View Case Studies
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

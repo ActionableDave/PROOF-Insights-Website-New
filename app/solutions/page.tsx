@@ -1,6 +1,7 @@
 
 
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -287,7 +288,7 @@ export default function SolutionsPage() {
             Let's discuss which research solutions are right for your business challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-100 px-8 py-3 text-lg font-semibold">
+            <Button className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-3 text-lg font-semibold">
               Schedule a Consultation
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-3 text-lg font-semibold">

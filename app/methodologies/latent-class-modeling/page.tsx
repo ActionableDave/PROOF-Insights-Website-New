@@ -1,457 +1,292 @@
+
+
+
 "use client";
 
 import Header from '@/components/Header'
-import LatentClassTableOfContents from '@/components/LatentClassTableOfContents'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { CheckCircle, AlertTriangle, ArrowRight, Users, Settings, BarChart3, Brain, Target, Zap, TrendingUp, Database, Search } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { CheckCircle, ArrowRight, Users, BarChart3, Brain, Target, Zap, TrendingUp, Database, Search } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Home() {
-  console.log("LCM page rendered")
+  console.log("LCA page rendered")
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
       
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="lg:grid lg:grid-cols-4 lg:gap-12">
-          {/* Sidebar - Table of Contents */}
-          <div className="hidden lg:block lg:col-span-1">
-            <LatentClassTableOfContents />
+      {/* Hero Section */}
+      <section className="relative py-24"
+               style={{
+                 backgroundImage: `url('https://assets.macaly-user-data.dev/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/CYGAdwTFHiRLAkHzlaSvK/cluster-analysis.png')`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+                 backgroundRepeat: 'no-repeat'
+               }}>
+        {/* 65% White Overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center space-y-8">
+            <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
+              <BarChart3 className="w-4 h-4 mr-1" />
+              Understanding Your Audience
+            </Badge>
+            <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
+              Latent Class Analysis &
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Statistical Discovery</span>
+            </h1>
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+              Uncover hidden patterns in your data. Latent Class Analysis is a powerful statistical technique used to identify unobserved (latent) subgroups within a population based on observed data.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all" asChild>
+                <Link href="/contact">
+                  <Search className="w-5 h-5 mr-2" />
+                  Start Analysis
+                </Link>
+              </Button>
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* Main Content */}
-          <div className="lg:col-span-3">
-            <article className="max-w-none">
-              {/* Hero Section */}
-              <div className="mb-16">
-                <h1 className="text-3xl lg:text-4xl font-semibold text-proof-gray-900 mb-6 leading-tight">
-                  Advanced Latent Class Modeling
-                </h1>
-                <p className="text-lg text-proof-gray-600 leading-relaxed max-w-2xl">
-                  Uncover hidden customer segments and behavioral patterns with sophisticated statistical modeling that reveals true preferences beyond demographics
-                </p>
-              </div>
-
-              {/* What is LCM Section */}
-              <section id="introduction" className="mb-20">
-                <div className="bg-proof-blue-50 p-8 rounded-sm border border-proof-blue-200 mb-8">
-                  <h3 className="text-xl font-medium text-proof-gray-900 mb-4">What is Latent Class Modeling (LCM)?</h3>
-                  <p className="text-base text-proof-gray-700 leading-relaxed mb-6">
-                    A statistical method that uncovers hidden ("latent") subgroups within a population based on observed data — segmentation that reflects true behavior and attitudes, not just demographics
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Three Types of LCM Models */}
+        <section className="mb-20">
+          <div className="text-center mb-8">
+            <Badge variant="secondary" className="mb-4">Methodology Options</Badge>
+            <h1 className="text-4xl font-bold text-proof-gray-900 mb-4">Latent Class Models</h1>
+            <p className="text-lg text-proof-gray-700 max-w-3xl mx-auto">
+              We apply three key types of Latent Class models to solve a range of research and analytics challenges:
+            </p>
+          </div>
+          
+          <div className="space-y-12">
+            {/* 1. Latent Class Cluster Model */}
+            <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-lg p-8">
+              <div className="flex items-start space-x-4 mb-6">
+                <div className="w-12 h-12 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-blue-700 mb-2">Latent Class Cluster Model</h3>
+                  <p className="text-base text-proof-gray-700 leading-relaxed">
+                    Groups individuals based on similarity in response patterns, rather than Euclidean distance as in the traditional K-Means approach.
                   </p>
-                  <div className="border-l-4 border-proof-blue-600 pl-4">
-                    <p className="text-proof-blue-700 font-medium text-sm">
-                      Why does it matter in modern market research?
-                    </p>
-                  </div>
                 </div>
-              </section>
-
-              {/* Evolution Section */}
-              <section id="evolution" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Evolution of Segmentation Approaches
-                </h2>
-                
-                <div className="space-y-1 border border-proof-gray-200 rounded-sm">
-                  <div className="p-6 border-b border-proof-gray-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-proof-gray-200 rounded-sm flex items-center justify-center flex-shrink-0">
-                        <BarChart3 className="w-4 h-4 text-proof-gray-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-base mb-1">Traditional clustering & demographic segmentation</h3>
-                        <p className="text-sm text-proof-gray-600">Basic grouping by observable characteristics</p>
-                      </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Key Benefits:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Probability-based classification: assesses the probability that each respondent belongs to every cluster. In a model with a good fit, these probabilities are usually close to 100% for the cluster a user is most associated with and close to 0% for the other clusters</p>
                     </div>
-                  </div>
-
-                  <div className="p-6 border-b border-proof-gray-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-proof-blue-100 rounded-sm flex items-center justify-center flex-shrink-0">
-                        <Search className="w-4 h-4 text-proof-blue-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-base mb-1">Rise of probabilistic methods like Latent Class Analysis (LCA)</h3>
-                        <p className="text-sm text-proof-gray-600">Statistical approaches for deeper insights</p>
-                      </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Handles variables of mixed scale types (nominal, ordinal or continuous), which allows the use of behavioral data in clustering</p>
                     </div>
-                  </div>
-
-                  <div className="p-6 bg-proof-emerald-50">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-proof-emerald-600 rounded-sm flex items-center justify-center flex-shrink-0">
-                        <Brain className="w-4 h-4 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-base mb-1 text-proof-emerald-700">Integration with conjoint analysis</h3>
-                        <p className="text-sm text-proof-gray-700">Leading to Latent Class Conjoint and advanced hybrid models</p>
-                      </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Statistical tests are available to assess the model fit and compare different models</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">More robust with missing data - respondents can still be classified even with incomplete information</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Continuous or discrete factors can be used in a LC cluster model to deal with rating scale usage bias as a faster, more flexible alternative to case level standardization, and to capture obvious relationships in the data</p>
                     </div>
                   </div>
                 </div>
-              </section>
-
-              {/* How LCM Works Section */}
-              <section id="how-it-works" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  How Latent Class Modeling Works
-                </h2>
                 
-                <div className="relative">
-                  <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-2">
-                    {/* Step 1 */}
-                    <div className="flex-1 relative">
-                      <div className="bg-white border-2 border-proof-blue-600 rounded-lg p-6 shadow-sm h-full flex flex-col">
-                        <div className="flex flex-col items-center text-center flex-grow">
-                          <div className="w-12 h-12 bg-proof-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
-                          <h3 className="font-semibold text-base mb-3 text-proof-blue-700">Data Collection</h3>
-                          <p className="text-sm text-proof-gray-600 leading-relaxed flex-grow">Collect responses on preferences, behaviors, attitudes</p>
-                        </div>
-                      </div>
-                      {/* Arrow pointing right */}
-                      <div className="hidden md:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                        <svg width="32" height="24" viewBox="0 0 32 24" className="text-proof-blue-600">
-                          <path d="M20 4 L28 12 L20 20 M28 12 L4 12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Step 2 */}
-                    <div className="flex-1 relative">
-                      <div className="bg-white border-2 border-proof-emerald-600 rounded-lg p-6 shadow-sm h-full flex flex-col">
-                        <div className="flex flex-col items-center text-center flex-grow">
-                          <div className="w-12 h-12 bg-proof-emerald-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
-                          <h3 className="font-semibold text-base mb-3 text-proof-emerald-700">Model Estimation</h3>
-                          <p className="text-sm text-proof-gray-600 leading-relaxed flex-grow">Use EM algorithms and fit statistics (BIC/AIC) to identify the number of latent segments</p>
-                        </div>
-                      </div>
-                      {/* Arrow pointing right */}
-                      <div className="hidden md:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                        <svg width="32" height="24" viewBox="0 0 32 24" className="text-proof-emerald-600">
-                          <path d="M20 4 L28 12 L20 20 M28 12 L4 12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div className="flex-1 relative">
-                      <div className="bg-white border-2 border-proof-teal-600 rounded-lg p-6 shadow-sm h-full flex flex-col">
-                        <div className="flex flex-col items-center text-center flex-grow">
-                          <div className="w-12 h-12 bg-proof-teal-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
-                          <h3 className="font-semibold text-base mb-3 text-proof-teal-700">Assign Probabilities</h3>
-                          <p className="text-sm text-proof-gray-600 leading-relaxed flex-grow">Compute each respondent's likelihood of belonging to each class</p>
-                        </div>
-                      </div>
-                      {/* Arrow pointing right */}
-                      <div className="hidden md:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                        <svg width="32" height="24" viewBox="0 0 32 24" className="text-proof-teal-600">
-                          <path d="M20 4 L28 12 L20 20 M28 12 L4 12" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Step 4 */}
-                    <div className="flex-1">
-                      <div className="bg-white border-2 border-proof-gray-600 rounded-lg p-6 shadow-sm h-full flex flex-col">
-                        <div className="flex flex-col items-center text-center flex-grow">
-                          <div className="w-12 h-12 bg-proof-gray-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">4</div>
-                          <h3 className="font-semibold text-base mb-3 text-proof-gray-700">Interpret Segments</h3>
-                          <p className="text-sm text-proof-gray-600 leading-relaxed flex-grow">Profile each class using its behavioral/attitudinal pattern and probability distributions</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* Latent Class Conjoint Section */}
-              <section id="lcm-conjoint" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Latent Class Conjoint: Segmenting Preferences
-                </h2>
-                
-                <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-sm p-8 mb-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Target className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-base text-proof-gray-700 leading-relaxed mb-4">
-                        LCM applied to conjoint data estimates part‑worths per segment and uncovers preference heterogeneity
-                      </p>
-                      <p className="text-sm text-proof-blue-700 font-medium">
-                        Ideal for tailoring product or pricing strategies by segment
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* What Sets LCM Apart */}
-              <section id="advantages" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  What Sets LCM Apart
-                </h2>
-                
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="border border-proof-gray-200 rounded-sm p-6 text-center">
-                    <div className="w-12 h-12 bg-proof-blue-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <Brain className="w-6 h-6 text-proof-blue-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-3">Natural Segments</h3>
-                    <p className="text-sm text-proof-gray-600">Identifies naturally occurring segments rather than imposing arbitrary groups</p>
-                  </div>
-
-                  <div className="border border-proof-gray-200 rounded-sm p-6 text-center">
-                    <div className="w-12 h-12 bg-proof-emerald-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <Database className="w-6 h-6 text-proof-emerald-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-3">Variable Flexibility</h3>
-                    <p className="text-sm text-proof-gray-600">Handles both categorical and continuous variables (latent class/profile flexibility)</p>
-                  </div>
-
-                  <div className="border border-proof-gray-200 rounded-sm p-6 text-center">
-                    <div className="w-12 h-12 bg-proof-teal-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <TrendingUp className="w-6 h-6 text-proof-teal-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-3">Probabilistic Assignment</h3>
-                    <p className="text-sm text-proof-gray-600">Provides probabilistic segment assignment for nuanced analysis</p>
-                  </div>
-                </div>
-              </section>
-
-              {/* Pros & Cons */}
-              <section id="pros-cons" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Pros & Cons
-                </h2>
-                
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="border border-proof-emerald-200 rounded-sm bg-proof-emerald-50">
-                    <div className="p-6">
-                      <h3 className="flex items-center text-proof-emerald-700 font-medium mb-4">
-                        <CheckCircle className="w-5 h-5 mr-2" />
-                        Advantages
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start space-x-3">
-                          <CheckCircle className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
-                          <p className="text-sm text-proof-gray-700">Reveals hidden psychological or behavioral segments</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <CheckCircle className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
-                          <p className="text-sm text-proof-gray-700">Combines depth (segment-level insight) with robustness (stability across data)</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="border border-orange-200 rounded-sm bg-orange-50">
-                    <div className="p-6">
-                      <h3 className="flex items-center text-orange-700 font-medium mb-4">
-                        <AlertTriangle className="w-5 h-5 mr-2" />
-                        Challenges
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="flex items-start space-x-3">
-                          <AlertTriangle className="w-4 h-4 text-orange-600 mt-0.5 flex-shrink-0" />
-                          <p className="text-sm text-proof-gray-700">Requires strong statistical expertise, careful model selection (e.g., BIC vs AIC)</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <AlertTriangle className="w-4 h-4 text-orange-600 mt-0.5 flex-shrink-0" />
-                          <p className="text-sm text-proof-gray-700">Can over-segment without operational relevance — balancing granularity with usability is key</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* When to Use LCM */}
-              <section id="when-to-use" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  When to Use Latent Class Modeling
-                </h2>
-                
-                <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-sm p-6">
-                  <h3 className="text-proof-blue-700 font-medium mb-4">Optimal for:</h3>
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Real-World Applications:</h4>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <ArrowRight className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-proof-gray-700">Market segmentation where behavioral and attitudinal diversity matters</p>
+                      <p className="text-sm text-proof-gray-700">Segmenting customers using both attitudinal and behavioral data</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <ArrowRight className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-proof-gray-700">Product and pricing strategies using latent class conjoint for targeted offerings</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <ArrowRight className="w-4 h-4 text-proof-blue-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-proof-gray-700">Complex decision environments with preference heterogeneity — e.g., telecom bundles, financial services</p>
+                      <p className="text-sm text-proof-gray-700">Creating stable, well-defined segments with interpretable patterns</p>
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
+            </div>
 
-              {/* Deliverables & Insights */}
-              <section id="deliverables" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Deliverables & Insights
-                </h2>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="text-center border border-proof-gray-200 rounded-sm p-6">
-                    <div className="w-10 h-10 bg-proof-blue-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <Users className="w-5 h-5 text-proof-blue-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-2">Segment Profiles</h3>
-                    <p className="text-xs text-proof-gray-600">Clear personas with behavior and preference patterns</p>
-                  </div>
-
-                  <div className="text-center border border-proof-gray-200 rounded-sm p-6">
-                    <div className="w-10 h-10 bg-proof-emerald-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <BarChart3 className="w-5 h-5 text-proof-emerald-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-2">Part‑worth Utilities</h3>
-                    <p className="text-xs text-proof-gray-600">For conjoint analysis applications</p>
-                  </div>
-
-                  <div className="text-center border border-proof-gray-200 rounded-sm p-6">
-                    <div className="w-10 h-10 bg-proof-teal-100 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-5 h-5 text-proof-teal-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-2">Probability Scores</h3>
-                    <p className="text-xs text-proof-gray-600">For classification and predictive targeting</p>
-                  </div>
-
-                  <div className="text-center border border-proof-gray-200 rounded-sm p-6">
-                    <div className="w-10 h-10 bg-proof-gray-200 rounded-sm flex items-center justify-center mx-auto mb-4">
-                      <Settings className="w-5 h-5 text-proof-gray-600" />
-                    </div>
-                    <h3 className="font-medium text-base mb-2">Strategic Frameworks</h3>
-                    <p className="text-xs text-proof-gray-600">Tailored messaging, product development, pricing optimization</p>
-                  </div>
+            {/* 2. Latent Class Factor Model */}
+            <div className="bg-proof-emerald-50 border border-proof-emerald-200 rounded-lg p-8">
+              <div className="flex items-start space-x-4 mb-6">
+                <div className="w-12 h-12 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-6 h-6 text-white" />
                 </div>
-              </section>
-
-              {/* Comparison Table */}
-              <section id="comparison" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  LCM vs. Other Techniques
-                </h2>
-                
-                <div className="border border-proof-gray-200 rounded-sm overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full">
-                      <thead className="bg-proof-gray-50">
-                        <tr>
-                          <th className="px-6 py-4 text-left text-sm font-medium text-proof-gray-900">Method</th>
-                          <th className="px-6 py-4 text-left text-sm font-medium text-proof-gray-900">Best for</th>
-                          <th className="px-6 py-4 text-left text-sm font-medium text-proof-gray-900">Segment Granularity</th>
-                          <th className="px-6 py-4 text-left text-sm font-medium text-proof-gray-900">Complexity</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-proof-gray-200">
-                        <tr>
-                          <td className="px-6 py-4 text-sm font-medium text-proof-gray-900">Demographic clustering</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-600">Broad groups by observable traits</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-600">Low</td>
-                          <td className="px-6 py-4">
-                            <Badge variant="secondary" className="bg-proof-emerald-100 text-proof-emerald-700 text-xs">Low</Badge>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="px-6 py-4 text-sm font-medium text-proof-gray-900">K‑means clustering</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-600">Numeric segmentation only</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-600">Medium</td>
-                          <td className="px-6 py-4">
-                            <Badge variant="secondary" className="bg-yellow-100 text-yellow-700 text-xs">Medium</Badge>
-                          </td>
-                        </tr>
-                        <tr className="bg-proof-blue-50">
-                          <td className="px-6 py-4 text-sm font-medium text-proof-blue-700">Latent Class Modeling</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-700">Behavioral & attitudinal segmentation</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-700">High</td>
-                          <td className="px-6 py-4">
-                            <Badge variant="secondary" className="bg-red-100 text-red-700 text-xs">High</Badge>
-                          </td>
-                        </tr>
-                        <tr className="bg-proof-emerald-50">
-                          <td className="px-6 py-4 text-sm font-medium text-proof-emerald-700">Latent Class Conjoint</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-700">Preference segmentation</td>
-                          <td className="px-6 py-4 text-sm text-proof-gray-700">High</td>
-                          <td className="px-6 py-4">
-                            <Badge variant="secondary" className="bg-red-100 text-red-700 text-xs">High</Badge>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </section>
-
-              {/* Real-World Examples */}
-              <section id="examples" className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Real‑World Examples
-                </h2>
-                
-                <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-sm p-8">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Zap className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-medium text-base mb-2 text-proof-blue-700">PROOF Insights Case Studies</h3>
-                      <p className="text-sm text-proof-gray-700">
-                        Using latent class conjoint to profile segments and inform product positioning
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              {/* Summary & Takeaways */}
-              <section className="mb-20">
-                <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
-                  Summary & Takeaways
-                </h2>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-base text-proof-gray-700">Latent Class Modeling delivers deep, actionable insights by revealing hidden segments</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-base text-proof-gray-700">Perfect for markets with nuanced customer preferences</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-base text-proof-gray-700">Requires careful design, robust validation, and clear translation into business actions</p>
-                  </div>
-                </div>
-              </section>
-
-              {/* Call to Action */}
-              <section className="mb-20">
-                <div className="bg-gradient-to-r from-proof-blue-50 to-proof-emerald-50 border border-proof-blue-200 rounded-lg p-12 text-center">
-                  <h2 className="text-2xl font-semibold text-proof-gray-900 mb-4">
-                    Ready to Uncover Hidden Customer Segments?
-                  </h2>
-                  <p className="text-lg text-proof-gray-600 mb-8 max-w-2xl mx-auto">
-                    Consult with PROOF Insights for custom latent class studies. Link to related services, methodologies, and case studies.
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-emerald-700 mb-2">Latent Class Factor Model</h3>
+                  <p className="text-base text-proof-gray-700 leading-relaxed">
+                    Simplify complex data into meaningful dimensions.
                   </p>
-                  <button className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white font-medium px-8 py-4 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                    Get Started Today
-                  </button>
+                  <p className="text-base text-proof-gray-700 leading-relaxed mt-2">
+                    This model identifies latent factors that explain correlations among observed variables. Unlike traditional factor analysis, LC Factor models generate discrete, ordinal factors such as Low / Mid / High, which can be more actionable in marketing and strategy.
+                  </p>
                 </div>
-              </section>
-            </article>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Key Benefits:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Works with mixed data types</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">No need to rotate factors for interpretation</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Real-World Applications:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <ArrowRight className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Since LC factors are discrete and ordinal, using LC Factor models rather than traditional factor / principal components analysis may be a better approach when creating affinity scores, because Low/Mid/High groups will be created by the model rather than by arbitrary cutoffs of values of a continuous factor</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <ArrowRight className="w-4 h-4 text-proof-emerald-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">LC factors can be converted to segments. For example, if 2 factors are identified with 2 levels each (Low/High), then respondents can be grouped into 4 segments, which will represent each possible combination of values in the 2 factors: (Low, Low), (Low, High), (High, Low), (High, High)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. Latent Class Regression Model */}
+            <div className="bg-proof-teal-50 border border-proof-teal-200 rounded-lg p-8">
+              <div className="flex items-start space-x-4 mb-6">
+                <div className="w-12 h-12 bg-proof-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-proof-teal-700 mb-2">Latent Class Regression Model</h3>
+                  <p className="text-base text-proof-gray-700 leading-relaxed">
+                    Build predictive models that reflect real-world complexity.
+                  </p>
+                  <p className="text-base text-proof-gray-700 leading-relaxed mt-2">
+                    The LC Regression model simultaneously classifies individuals into segments and builds a separate regression model for each segment. Each segment represents a homogeneous group of respondents. This approach is ideal when data reflects substantial heterogeneity.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Key Benefits:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Handles variables of mixed scale types (nominal, ordinal or continuous)</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">No assumptions of linearity, normality, or homogeneity</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Separate models for each class improve predictive accuracy</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Supports covariates and parameter constraints to avoid overfitting</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Ideal for conjoint analysis - simultaneously identify segments in population and product features that appeal to each segment</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-medium text-proof-gray-900 mb-4">Real-World Applications:</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <ArrowRight className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Segment-specific product design strategies</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <ArrowRight className="w-4 h-4 text-proof-teal-600 mt-0.5 flex-shrink-0" />
+                      <p className="text-sm text-proof-gray-700">Modeling outcomes like purchase intent across distinct respondent types</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why It Matters */}
+        <section className="mb-20">
+          <h2 className="text-2xl font-semibold text-proof-gray-900 mb-8 pb-2 border-b border-proof-gray-200">
+            Why It Matters
+          </h2>
+          
+          <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-lg p-8">
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Brain className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <p className="text-base text-proof-gray-700 leading-relaxed">
+                  Latent Class models provide deeper insight than traditional techniques by recognizing that one-size-fits-all analysis often misses the mark, giving you the tools to uncover hidden structure in your data for more precise targeting and better strategic outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-proof-blue-600 to-proof-emerald-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white">
+            Ready to Uncover Hidden Patterns?
+          </h2>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            Partner with PROOF Insights to leverage advanced Latent Class Analysis that reveals 
+            hidden subgroups and transforms complex data into strategic advantage.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Brain className="w-5 h-5 mr-2" />
+                Start Latent Class Analysis
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Database className="w-5 h-5 mr-2" />
+                View Case Studies
+              </Button>
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
+
+
+
+
+
+
+
+
+

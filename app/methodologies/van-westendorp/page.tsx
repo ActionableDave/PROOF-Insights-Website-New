@@ -1,12 +1,39 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
+import Link from "next/link";
 import { 
   BarChart3, 
   Users, 
@@ -61,18 +88,22 @@ export default function VanWestendorpPage() {
               Van Westendorp
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Price Sensitivity Meter</span>
             </h1>
-            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black text-center">
               Apply the classic Van Westendorp Price Sensitivity Meter to determine acceptable price ranges, 
               optimal pricing points, and value perception thresholds through four critical price questions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Gauge className="w-5 h-5 mr-2" />
-                Start PSM Analysis
+              <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Link href="/contact">
+                  <Scale className="w-5 h-5 mr-2" />
+                  Start PSM Analysis
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Scale className="w-5 h-5 mr-2" />
-                View Methodology
+              <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Link href="/resources/case-studies">
+                  <Gauge className="w-5 h-5 mr-2" />
+                  View Pricing Studies
+                </Link>
               </Button>
             </div>
           </div>
@@ -81,23 +112,23 @@ export default function VanWestendorpPage() {
 
       {/* Overview Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Classic Price Sensitivity Measurement
-                </h2>
-              </div>
-              <p className="text-lg text-black">
-                The Van Westendorp Price Sensitivity Meter is a proven methodology that identifies 
-                acceptable price ranges by asking customers four key questions about price perception, 
-                revealing optimal price points and value thresholds that guide strategic pricing decisions.
-              </p>
-              
+        <div className="max-w-6xl mx-auto">
+          <div className="px-4 sm:px-6 lg:px-8 space-y-6 mb-16 flex flex-col items-center">
+            <Badge className="inline-flex items-center rounded-full border transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 text-xs font-semibold text-center py-2 px-4">
+              Methodology Overview
+            </Badge>
+            <h2 className="text-proof-gray-900 lg:text-4xl text-3xl font-bold text-center">
+              Classic Price Sensitivity Measurement
+            </h2>
+            <p className="text-lg text-black text-center">
+              The Van Westendorp Price Sensitivity Meter is a proven methodology that identifies 
+              acceptable price ranges by asking customers four key questions about price perception, 
+              revealing optimal price points and value thresholds that guide strategic pricing decisions.
+            </p>
+          </div>
+          
+          <div className="px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-6">
                 <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
                   <div className="flex items-start space-x-4">
@@ -128,59 +159,28 @@ export default function VanWestendorpPage() {
                     </div>
                   </div>
                 </Card>
-              </div>
-            </div>
-
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">PSM Analysis Impact</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Price Insights</Badge>
-                </div>
                 
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Scale className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">92%</span>
+                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-orange-500 hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <DollarSign className="h-5 w-5 text-white" />
                     </div>
-                    <p className="text-sm text-black">Range Accuracy</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">24%</span>
+                    <div>
+                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Revenue Estimation</h3>
+                      <p className="text-black">
+                        Derives an approximate price to revenue model by capturing purchase intent or expected volume for the anticipated price, value price and expensive price.
+                      </p>
                     </div>
-                    <p className="text-sm text-black">Price Optimization</p>
                   </div>
+                </Card>
+              </div>
 
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">22K+</span>
-                    </div>
-                    <p className="text-sm text-black">Price Perceptions</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Gauge className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">165+</span>
-                    </div>
-                    <p className="text-sm text-black">PSM Studies</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-black">Price Sensitivity Clarity</span>
-                    <span className="font-medium text-proof-gray-900">91%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '91%'}}></div>
-                  </div>
-                </div>
+              <div className="relative z-10 rounded-2xl shadow-2xl border border-proof-gray-200 overflow-hidden">
+                <img 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/K6DFRyBkmeigJeyYKPRG-/van-wes-square.webp"
+                  alt="Van Westendorp Price Sensitivity Meter Analysis Chart"
+                  className="w-full h-auto object-contain"
+                />
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function VanWestendorpPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
               The Four Critical Price Questions
             </h2>
-            <p className="text-lg text-black max-w-3xl mx-auto">
+            <p className="text-lg text-black text-center">
               Van Westendorp's methodology centers on four key questions that reveal different 
               aspects of price perception and value assessment across your target market.
             </p>
@@ -211,39 +211,32 @@ export default function VanWestendorpPage() {
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
                     <XSquare className="h-6 w-6 text-red-600" />
                   </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Too Expensive</CardTitle>
+                  <CardTitle className="text-xl text-proof-gray-900">Too Cheap</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black font-medium italic">
-                  "At what price would you consider this product to be so expensive that 
-                  you would not consider buying it?"
-                </p>
+                  "At what price would the cost of this product be so cheap that you would question its quality?"</p>
                 <p className="text-black">
-                  Identifies the upper price threshold where customer resistance becomes 
-                  prohibitive and purchase intention drops significantly.
+                  <br />
                 </p>
-              </CardContent>
+                </CardContent>
             </Card>
 
             <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
               <CardHeader className="pb-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <AlertCircle className="h-6 w-6 text-orange-600" />
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <ThumbsUp className="h-6 w-6 text-green-600" />
                   </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Expensive but Worth It</CardTitle>
+                  <CardTitle className="text-xl text-proof-gray-900">Good Value</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black font-medium italic">
-                  "At what price would you consider this product expensive, 
-                  but still worth buying?"
-                </p>
+                  At what price would the cost of this product be considered a bargain, a great buy for the money?</p>
                 <p className="text-black">
-                  Captures the price point where customers perceive high value despite 
-                  recognizing the premium pricing compared to alternatives.
-                </p>
+                  (Purchase intent is asked at this price)</p>
               </CardContent>
             </Card>
 
@@ -253,19 +246,16 @@ export default function VanWestendorpPage() {
                   <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
                     <ThumbsDown className="h-6 w-6 text-yellow-600" />
                   </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Cheap but Questionable</CardTitle>
+                  <CardTitle className="text-xl text-proof-gray-900">Expensive</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black font-medium italic">
-                  "At what price would you consider this product a bargain 
-                  but question its quality?"
-                </p>
+                  "At what price would the cost of this product start to get expensive so that it is not out of the question, but you would have to give it some thought before buying?"</p>
                 <p className="text-black">
-                  Reveals the lower price threshold where customers begin to question 
-                  quality and value, potentially damaging brand perception.
+                  <br />
                 </p>
-              </CardContent>
+                </CardContent>
             </Card>
 
             <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
@@ -274,17 +264,14 @@ export default function VanWestendorpPage() {
                   <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
                     <ThumbsDown className="h-6 w-6 text-red-600" />
                   </div>
-                  <CardTitle className="text-xl text-proof-gray-900">Too Cheap</CardTitle>
+                  <CardTitle className="text-xl text-proof-gray-900">Prohibitive</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black font-medium italic">
-                  "At what price would you consider this product so inexpensive 
-                  that you would question its quality and not buy it?"
-                </p>
+                  "At what price would this product become so expensive that you would NOT consider buying it?"</p>
                 <p className="text-black">
-                  Identifies the absolute lower bound where low pricing signals 
-                  poor quality and eliminates purchase consideration entirely.
+                  <br />
                 </p>
               </CardContent>
             </Card>
@@ -303,7 +290,7 @@ export default function VanWestendorpPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
               Van Westendorp Use Cases
             </h2>
-            <p className="text-lg text-black max-w-3xl mx-auto">
+            <p className="text-lg text-black text-center">
               The Price Sensitivity Meter provides valuable insights for pricing strategy, 
               market positioning, and competitive analysis across diverse business scenarios.
             </p>
@@ -396,93 +383,6 @@ export default function VanWestendorpPage() {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-teal-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <BarChart3 className="h-8 w-8 text-proof-teal-600" />
-                </div>
-                <CardTitle className="text-xl text-proof-gray-900">Market Research</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-black">
-                  Conduct comprehensive market research to understand price sensitivity 
-                  patterns across different customer segments and markets.
-                </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Segment analysis
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Market comparison
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Trend identification
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-proof-blue-600" />
-                </div>
-                <CardTitle className="text-xl text-proof-gray-900">Price Adjustment</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-black">
-                  Evaluate the impact of potential price changes on customer acceptance 
-                  and market position before implementing adjustments.
-                </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Price increase testing
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Discount strategies
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Competitive responses
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-proof-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Gauge className="h-8 w-8 text-proof-emerald-600" />
-                </div>
-                <CardTitle className="text-xl text-proof-gray-900">Quality Perception</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <p className="text-black">
-                  Understand how pricing affects quality perception and brand image 
-                  to optimize the price-quality relationship.
-                </p>
-                <div className="space-y-2 text-sm text-proof-gray-600">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Quality signals
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Value communication
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                    Brand integrity
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -498,10 +398,8 @@ export default function VanWestendorpPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
               Systematic Price Sensitivity Analysis
             </h2>
-            <p className="text-lg text-black max-w-3xl mx-auto">
-              Our rigorous approach to Van Westendorp analysis ensures accurate price sensitivity 
-              measurement and actionable insights for strategic pricing decisions.
-            </p>
+            <p className="text-lg text-black text-center">
+              Our rigorous approach to Van Westendorp analysis enhanced with purchase intent metrics ensures accurate price sensitivity measurement and actionable insights for strategic pricing decisions.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -543,9 +441,7 @@ export default function VanWestendorpPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black">
-                  Execute Van Westendorp questioning with quality controls and validation 
-                  to ensure accurate price perception measurement across your target market.
-                </p>
+                  Execute Van Westendorp questioning (including purchase intent follow ups) with quality controls and validation to ensure accurate price perception measurement across your target market.</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-proof-gray-600">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
@@ -572,9 +468,7 @@ export default function VanWestendorpPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-black">
-                  Analyze price sensitivity curves and intersection points to generate 
-                  actionable pricing recommendations and strategic insights.
-                </p>
+                  Analyze price sensitivity and revenue curves and intersection points to generate actionable pricing recommendations and strategic insights.</p>
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-proof-gray-600">
                     <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
@@ -599,20 +493,23 @@ export default function VanWestendorpPage() {
       <section className="py-20 bg-gradient-to-br from-proof-blue-600 to-proof-emerald-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           <h2 className="text-3xl lg:text-4xl font-bold text-white">
-            Ready to Understand Your Price Sensitivity?
-          </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            Ready to find your acceptable price range?</h2>
+          <p className="text-xl text-blue-100 text-center">
             Partner with PROOF Insights to leverage Van Westendorp Price Sensitivity Meter for 
             clear insights into optimal pricing, acceptable ranges, and value perception thresholds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Scale className="w-5 h-5 mr-2" />
-              Start PSM Analysis
+            <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+              <Link href="/contact">
+                <Scale className="w-5 h-5 mr-2" />
+                Start PSM Analysis
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <Gauge className="w-5 h-5 mr-2" />
-              View Pricing Studies
+            <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+              <Link href="/resources/case-studies">
+                <Gauge className="w-5 h-5 mr-2" />
+                View Pricing Studies
+              </Link>
             </Button>
           </div>
         </div>
@@ -620,5 +517,31 @@ export default function VanWestendorpPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

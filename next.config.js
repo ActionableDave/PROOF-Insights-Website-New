@@ -1,3 +1,5 @@
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -18,6 +20,20 @@ const nextConfig = {
     "*.macaly-app.com",
     "*.macaly-user-data.dev",
   ],
+  async redirects() {
+    return [
+      {
+        source: '/methodologies/price-optimization',
+        destination: '/solutions/innovation-growth/pricing',
+        permanent: true,
+      },
+      {
+        source: '/methodologies/price-laddering',
+        destination: '/methodologies/gabor-granger',
+        permanent: true,
+      },
+    ];
+  },
   webpack: (config, { dev, isServer }) => {
     // Only apply in development
     if (dev) {

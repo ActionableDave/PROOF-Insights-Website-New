@@ -1,5 +1,6 @@
 
 
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -271,11 +272,11 @@ export default function BrandStrategyPage() {
             differentiates your brand, resonates with customers, and drives business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
+            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
               <Heart className="w-5 h-5 mr-2" />
               Start Brand Development
             </Link>
-            <Link href="/resources/case-studies" className="inline-flex items-center justify-center bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
+            <Link href="/resources/case-studies" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
               <ArrowRight className="w-5 h-5 mr-2" />
               View Brand Case Studies
             </Link>
@@ -285,4 +286,5 @@ export default function BrandStrategyPage() {
     </div>
   );
 }
+
 

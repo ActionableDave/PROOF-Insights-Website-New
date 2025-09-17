@@ -1,9 +1,14 @@
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
+import Link from "next/link";
 import { 
   BarChart3, 
   Users, 
@@ -21,7 +26,7 @@ import {
   DollarSign,
   Layers,
   GitBranch,
-  Link,
+  Link as LinkIcon,
   Workflow,
   Network,
   Shuffle
@@ -35,8 +40,16 @@ export default function StructuralEquationModelingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24" style={{
+        backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/6keeKEuyQJmIK2Ar7NmSV/sem.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        {/* 65% White Overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <Network className="w-4 h-4 mr-1" />
@@ -46,19 +59,17 @@ export default function StructuralEquationModelingPage() {
               Structural Equation
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block">Modeling (SEM)</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Uncover complex relationships between multiple variables to understand the underlying 
               structure of competitive dynamics, market forces, and customer behavior patterns.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <GitBranch className="w-5 h-5 mr-2" />
-                Start SEM Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Workflow className="w-5 h-5 mr-2" />
-                View Model Examples
-              </Button>
+            <div className="flex justify-center pt-8">
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <GitBranch className="w-5 h-5 mr-2" />
+                  Start SEM Analysis
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -193,7 +204,7 @@ export default function StructuralEquationModelingPage() {
             <Card className="bg-white hover:shadow-lg transition-shadow duration-300 border-proof-gray-200">
               <CardHeader className="text-center pb-6">
                 <div className="w-16 h-16 bg-proof-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Link className="h-8 w-8 text-proof-blue-600" />
+                  <LinkIcon className="h-8 w-8 text-proof-blue-600" />
                 </div>
                 <CardTitle className="text-xl text-proof-gray-900">Brand Equity Modeling</CardTitle>
               </CardHeader>
@@ -486,17 +497,25 @@ export default function StructuralEquationModelingPage() {
             into competitive dynamics, customer behavior, and strategic business relationships.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <GitBranch className="w-5 h-5 mr-2" />
-              Start SEM Analysis
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <Network className="w-5 h-5 mr-2" />
-              View Model Examples
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <GitBranch className="w-5 h-5 mr-2" />
+                Start SEM Analysis
+              </Button>
+            </Link>
+            <Link href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Network className="w-5 h-5 mr-2" />
+                View Model Examples
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
+

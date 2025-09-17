@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -117,9 +118,7 @@ export default function MonitoringImprovingPage() {
                       Customer effort score
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2" />
-                      Journey touchpoint scorecards
-                    </li>
+                      <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2" />Event-based Quality</li>
                   </ul>
                   <Button asChild className="bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white w-full">
                     <Link href="/solutions/monitoring-improving/customer-experience-satisfaction">
@@ -158,9 +157,7 @@ export default function MonitoringImprovingPage() {
                       Usage frequency & patterns
                     </li>
                     <li className="flex items-center">
-                      <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2" />
-                      Basic behavioral segmentation
-                    </li>
+                      <CheckCircle className="w-4 h-4 text-proof-emerald-500 mr-2" />Related behavioral monitoring</li>
                   </ul>
                   <Button asChild className="bg-proof-amber-600 hover:bg-proof-amber-700 text-white w-full">
                     <Link href="/solutions/monitoring-improving/awareness-usage">
@@ -216,11 +213,18 @@ export default function MonitoringImprovingPage() {
             Set up continuous tracking and monitoring systems to stay ahead of market changes 
             and continuously improve your customer experience.
           </p>
-          <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              Schedule a Monitoring Strategy Session
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                Schedule a Monitoring Strategy Session
+              </Button>
             </Link>
-          </Button>
+            <Link href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                View Monitoring Case Studies
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -228,4 +232,5 @@ export default function MonitoringImprovingPage() {
     </div>
   )
 }
+
 
