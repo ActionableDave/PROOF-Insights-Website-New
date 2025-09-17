@@ -52,9 +52,7 @@ export default function ProductTestingPage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">Testing</span>
             </h1>
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-              Ensure your product meets market expectations before launch. Our comprehensive product testing evaluates 
-              performance, usability, and market potential through real user experiences and competitive analysis.
-            </p>
+              Our multi-faceted approach to product testing ensures you understand every aspect of your product's performance and market potential.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Link href="/contact">
                 <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
@@ -135,9 +133,7 @@ export default function ProductTestingPage() {
               Comprehensive Product Testing Methodologies
             </h2>
             <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              Our multi-faceted approach to product testing ensures you understand every aspect 
-              of your product's performance and market potential.
-            </p>
+              Our multi-faceted approach to product testing ensures you understand every aspect of your product's performance and market potential in order to optimize for success.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

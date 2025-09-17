@@ -1,9 +1,16 @@
+
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
+import Link from "next/link";
 import { 
   BarChart3, 
   Users, 
@@ -36,30 +43,33 @@ export default function ImportancePerformanceNPSPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-blue-50 to-proof-emerald-50 py-24">
+      <section 
+        className="relative py-24 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/WiwejgNBZJT4S97LP9uAO/importance-performance.png')`
+        }}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 hover:bg-proof-blue-100">
               <Gauge className="w-4 h-4 mr-1" />
               Performance & Loyalty Analysis
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
               Importance-Performance
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">& NPS Analysis</span>
+              <span className="bg-gradient-to-r from-proof-blue-400 to-proof-emerald-400 bg-clip-text text-transparent block leading-[1.2]">& NPS Analysis</span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed font-medium">
               Combine importance-performance analysis with Net Promoter Score insights to understand 
               competitive positioning, customer loyalty drivers, and strategic improvement priorities.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Grid className="w-5 h-5 mr-2" />
-                Start IPA Analysis
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Star className="w-5 h-5 mr-2" />
-                View Matrix Examples
-              </Button>
+            <div className="flex justify-center pt-8">
+              <Link href="/contact">
+                <Button size="lg" className="bg-proof-blue-600 hover:bg-proof-blue-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Grid className="w-5 h-5 mr-2" />
+                  Start IPA Analysis
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -117,57 +127,12 @@ export default function ImportancePerformanceNPSPage() {
               </div>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">IPA & NPS Impact</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Priority Insights</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Target className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">86%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Priority Accuracy</p>
-                  </div>
-                  
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <TrendingUp className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">47%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">NPS Improvement</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">25K+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Responses Analyzed</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Grid className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">200+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Matrices Created</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Strategic Focus</span>
-                    <span className="font-medium text-proof-gray-900">93%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '93%'}}></div>
-                  </div>
-                </div>
-              </div>
+            <div className="relative">
+              <img 
+                src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/VLhe_T95pt0DMm7Zjjwtj/image.png"
+                alt="Importance-Performance Analysis Matrix"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-proof-gray-200"
+              />
             </div>
           </div>
         </div>
@@ -487,17 +452,26 @@ export default function ImportancePerformanceNPSPage() {
             for clear strategic direction, optimal resource allocation, and enhanced customer loyalty.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Grid className="w-5 h-5 mr-2" />
-              Start Priority Analysis
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <Star className="w-5 h-5 mr-2" />
-              View Success Stories
-            </Button>
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Grid className="w-5 h-5 mr-2" />
+                Start Priority Analysis
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Star className="w-5 h-5 mr-2" />
+                View Success Stories
+              </Button>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
+
+

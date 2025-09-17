@@ -31,158 +31,33 @@ export default function MonadicTestingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-emerald-50 to-proof-blue-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24" style={{
+        backgroundImage: `url('https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/tysXiniM-mpiTMdmoquYo/monadic.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 hover:bg-proof-emerald-100">
               <Users className="w-4 h-4 mr-1" />
               Unbiased Testing
             </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
-              Monadic & Sequential
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-emerald-600 to-proof-blue-600 block leading-[1.2]">
-                Monadic Testing
-              </span>
-            </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-proof-gray-900 leading-tight lg:text-6xl text-4xl font-bold text-center">
+              Monadic <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-emerald-600 to-proof-blue-600 block leading-[1.2] text-center">
+                Testing</span></h1>
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Eliminate testing bias through controlled methodologies that expose each respondent 
               to only one concept, ensuring pure, uninfluenced feedback and accurate market predictions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button size="lg" className="bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                <Users className="w-5 h-5 mr-2" />
-                Start Monadic Test
-              </Button>
-              <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                <Eye className="w-5 h-5 mr-2" />
-                Explore Methods
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Overview Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 px-4 py-2">
-                  Methodology Overview
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Pure, Unbiased Concept Evaluation
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Monadic testing methodologies ensure each respondent evaluates only one concept, 
-                eliminating comparison bias and order effects that can distort results in 
-                traditional multi-concept testing approaches.
-              </p>
-              
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Eye className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Monadic Testing</h3>
-                      <p className="text-proof-gray-600">
-                        Each respondent evaluates only one concept in isolation, providing pure reactions 
-                        uncontaminated by comparison effects or cognitive anchoring.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Activity className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Sequential Monadic Testing</h3>
-                      <p className="text-proof-gray-600">
-                        Respondents evaluate multiple concepts sequentially with rotation, capturing 
-                        both isolated reactions and controlled comparative insights.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </div>
-            </div>
-
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Monadic Testing Impact</h3>
-                  <Badge className="bg-proof-emerald-100 text-proof-emerald-700">Bias-Free Results</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-proof-emerald-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Shield className="w-5 h-5 text-proof-emerald-600" />
-                      <span className="text-2xl font-bold text-proof-emerald-600">95%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Bias Reduction</p>
-                  </div>
-                  
-                  <div className="bg-proof-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Target className="w-5 h-5 text-proof-blue-600" />
-                      <span className="text-2xl font-bold text-proof-blue-600">88%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Prediction Accuracy</p>
-                  </div>
-
-                  <div className="bg-proof-amber-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Eye className="w-5 h-5 text-proof-amber-600" />
-                      <span className="text-2xl font-bold text-proof-amber-600">190+</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Concepts Tested</p>
-                  </div>
-
-                  <div className="bg-proof-teal-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <Users className="w-5 h-5 text-proof-teal-600" />
-                      <span className="text-2xl font-bold text-proof-teal-600">92%</span>
-                    </div>
-                    <p className="text-sm text-proof-gray-600">Response Quality</p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Market Launch Success Rate</span>
-                    <span className="font-medium text-proof-gray-900">86%</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-emerald-500 to-proof-blue-500 h-2 rounded-full" style={{width: '86%'}}></div>
-                  </div>
-                </div>
-
-                <div className="bg-proof-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-proof-gray-900 mb-2">Key Benefits</h4>
-                  <ul className="space-y-1 text-sm text-proof-gray-600">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Eliminates comparison bias
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Pure concept reactions
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
-                      Accurate market prediction
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <a href="/contact">
+                <Button size="lg" className="bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Users className="w-5 h-5 mr-2" />
+                  Start Monadic Test
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -200,9 +75,7 @@ export default function MonadicTestingPage() {
               Flexible Monadic Methodologies
             </h2>
             <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              Choose the optimal testing approach based on your research objectives, concept complexity, 
-              and desired balance between pure reactions and comparative insights.
-            </p>
+              Choose the optimal testing approach based on your research objectives, concept complexity, and desired balance between pure reactions and comparative insights. Each approach has its own unique advantages depending on your unique situation.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -220,6 +93,14 @@ export default function MonadicTestingPage() {
                   Each respondent evaluates only one concept in complete isolation, 
                   providing the purest possible reaction without any comparison influence.
                 </p>
+                
+                <div className="flex justify-center">
+                  <img 
+                    src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/vJZY5irnyPeXjSgSydu4i/image.png" 
+                    alt="Pure Monadic Testing Diagram" 
+                    className="w-full max-w-md h-auto rounded-lg shadow-sm"
+                  />
+                </div>
                 
                 <div className="space-y-4">
                   <h4 className="font-bold text-proof-gray-900">Best For:</h4>
@@ -280,6 +161,14 @@ export default function MonadicTestingPage() {
                   capturing both pure reactions and controlled comparative insights.
                 </p>
                 
+                <div className="flex justify-center">
+                  <img 
+                    src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/a6-vD-wBddwnVJnitZDm1/image.png" 
+                    alt="Sequential Monadic Testing Diagram" 
+                    className="w-full max-w-md h-auto rounded-lg shadow-sm"
+                  />
+                </div>
+                
                 <div className="space-y-4">
                   <h4 className="font-bold text-proof-gray-900">Best For:</h4>
                   <div className="space-y-3">
@@ -311,9 +200,7 @@ export default function MonadicTestingPage() {
                         Balanced insights
                       </li>
                       <li className="flex items-center">
-                        <TrendingUp className="h-4 w-4 text-proof-blue-600 mr-2" />
-                        Efficiency with multiple concepts
-                      </li>
+                        <TrendingUp className="h-4 w-4 text-proof-blue-600 mr-2" />Efficiency with multiple concepts, smaller samples</li>
                       <li className="flex items-center">
                         <TrendingUp className="h-4 w-4 text-proof-blue-600 mr-2" />
                         Controlled order effects
@@ -641,17 +528,26 @@ export default function MonadicTestingPage() {
             and deliver pure, accurate insights about your concepts' true market potential.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Brain className="w-5 h-5 mr-2" />
-              Begin Monadic Test
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-emerald-600 px-8 py-4 text-lg">
-              <PieChart className="w-5 h-5 mr-2" />
-              Explore Testing Options
-            </Button>
+            <a href="/contact">
+              <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Brain className="w-5 h-5 mr-2" />
+                Begin Monadic Test
+              </Button>
+            </a>
+            <a href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-emerald-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <PieChart className="w-5 h-5 mr-2" />
+                Explore Testing Options
+              </Button>
+            </a>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
+
+

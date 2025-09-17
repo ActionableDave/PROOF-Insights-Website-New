@@ -1,3 +1,7 @@
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,7 +35,7 @@ export default function FeatureBenefitTestingPage() {
       
       {/* Hero Section */}
       <section className="relative py-24" style={{
-        backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/g62RPENCwTIRQguNpW89e/features-benefits.png)',
+        backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/rkgmGohnnF7M80sImJyK0/feature-benefit.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -68,110 +72,65 @@ export default function FeatureBenefitTestingPage() {
       {/* Overview Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-                  Customer-Centered Development
-                </Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-                  Build What Customers Actually Want
-                </h2>
-              </div>
-              <p className="text-lg text-proof-gray-600">
-                Not all features are created equal. Our feature and benefit testing reveals which capabilities 
-                drive purchase decisions, enhance satisfaction, and justify premium pricing. Make informed 
-                development decisions based on customer priorities, not internal assumptions.
-              </p>
+          {/* Full-width header */}
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
+              Customer-Centered Development
+            </Badge>
+            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
+              Build What Customers Actually Want
+            </h2>
+          </div>
+
+          {/* Full-width descriptive text */}
+          <div className="text-center mb-16">
+            <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
+              Not all features are created equal. Our feature and benefit testing reveals which capabilities 
+              drive purchase decisions, enhance satisfaction, and justify premium pricing. Make informed 
+              development decisions based on customer priorities, not internal assumptions.
+            </p>
+          </div>
+          
+          {/* Two-column content */}
+          <div className="grid lg:grid-cols-2 gap-16 items-stretch">
+            <div className="space-y-6">
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Layers className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Feature Importance Analysis</h3>
+                    <p className="text-proof-gray-600">
+                      Identify which features are most important to customers and 
+                      drive their purchase decisions and satisfaction.
+                    </p>
+                  </div>
+                </div>
+              </Card>
               
-              <div className="space-y-6">
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-blue-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Layers className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Feature Importance Analysis</h3>
-                      <p className="text-proof-gray-600">
-                        Identify which features are most important to customers and 
-                        drive their purchase decisions and satisfaction.
-                      </p>
-                    </div>
+              <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Heart className="h-5 w-5 text-white" />
                   </div>
-                </Card>
-                
-                <Card className="p-6 bg-proof-gray-50 border-l-4 border-l-proof-emerald-500 hover:shadow-lg transition-shadow duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Heart className="h-5 w-5 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Benefit Hierarchy Testing</h3>
-                      <p className="text-proof-gray-600">
-                        Understand how customers prioritize different benefits and 
-                        which messaging resonates most effectively.
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-bold text-proof-gray-900 mb-2 text-lg">Benefit Hierarchy Testing</h3>
+                    <p className="text-proof-gray-600">
+                      Understand how customers prioritize different benefits and 
+                      which messaging resonates most effectively.
+                    </p>
                   </div>
-                </Card>
-              </div>
+                </div>
+              </Card>
             </div>
 
-            <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border border-proof-gray-200">
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-proof-gray-900">Feature Priority Matrix</h3>
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700">Development Guide</Badge>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-proof-emerald-50 border border-proof-emerald-200 rounded-lg p-4 text-center">
-                    <div className="flex items-center justify-center mb-2">
-                      <Award className="w-5 h-5 text-proof-emerald-600 mr-1" />
-                      <span className="text-xs font-bold text-proof-emerald-700">High Impact</span>
-                    </div>
-                    <div className="text-xs text-proof-gray-600">High Feasibility</div>
-                    <div className="text-lg font-bold text-proof-emerald-600 mt-1">Must Have</div>
-                  </div>
-                  
-                  <div className="bg-proof-amber-50 border border-proof-amber-200 rounded-lg p-4 text-center">
-                    <div className="flex items-center justify-center mb-2">
-                      <Lightbulb className="w-5 h-5 text-proof-amber-600 mr-1" />
-                      <span className="text-xs font-bold text-proof-amber-700">High Impact</span>
-                    </div>
-                    <div className="text-xs text-proof-gray-600">Low Feasibility</div>
-                    <div className="text-lg font-bold text-proof-amber-600 mt-1">Future</div>
-                  </div>
-
-                  <div className="bg-proof-blue-50 border border-proof-blue-200 rounded-lg p-4 text-center">
-                    <div className="flex items-center justify-center mb-2">
-                      <Settings className="w-5 h-5 text-proof-blue-600 mr-1" />
-                      <span className="text-xs font-bold text-proof-blue-700">Low Impact</span>
-                    </div>
-                    <div className="text-xs text-proof-gray-600">High Feasibility</div>
-                    <div className="text-lg font-bold text-proof-blue-600 mt-1">Nice to Have</div>
-                  </div>
-
-                  <div className="bg-proof-red-50 border border-proof-red-200 rounded-lg p-4 text-center">
-                    <div className="flex items-center justify-center mb-2">
-                      <Activity className="w-5 h-5 text-proof-red-600 mr-1" />
-                      <span className="text-xs font-bold text-proof-red-700">Low Impact</span>
-                    </div>
-                    <div className="text-xs text-proof-gray-600">Low Feasibility</div>
-                    <div className="text-lg font-bold text-proof-red-600 mt-1">Avoid</div>
-                  </div>
-                </div>
-
-                <div className="space-y-3 border-t border-proof-gray-200 pt-4">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-proof-gray-600">Development Priority Score</span>
-                    <span className="font-medium text-proof-gray-900">8.4/10</span>
-                  </div>
-                  <div className="w-full bg-proof-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-proof-blue-500 to-proof-emerald-500 h-2 rounded-full" style={{width: '84%'}}></div>
-                  </div>
-                </div>
-              </div>
+            <div className="relative z-10 bg-white rounded-2xl shadow-2xl border border-proof-gray-200 overflow-hidden h-full flex items-center">
+              <img
+                src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/uiG3aMvcdig4osZeyALOY/image.png"
+                alt="Feature Classification Matrix for concept configuration decisions showing four quadrants: Delighter (blue), Satisfier (green), Indifferent (gray), and Must-Haves (red)"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -383,14 +342,18 @@ export default function FeatureBenefitTestingPage() {
             and build products that drive satisfaction and market success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Star className="w-5 h-5 mr-2" />
-              Start Feature Testing
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <BarChart3 className="w-5 h-5 mr-2" />
-              View Priority Examples
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <Star className="w-5 h-5 mr-2" />
+                Start Feature Testing
+              </Button>
+            </Link>
+            <Link href="/resources/case-studies">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <BarChart3 className="w-5 h-5 mr-2" />
+                View Priority Examples
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

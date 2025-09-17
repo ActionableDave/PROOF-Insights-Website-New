@@ -1,3 +1,6 @@
+
+
+
 "use client";
 
 import Link from "next/link";
@@ -138,6 +141,362 @@ export default function ConjointACBCPage() {
                 </div>
               </div>
             </Card>
+          </div>
+          
+          {/* Deep Dive: Choice-Based Conjoint */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl lg:text-3xl font-bold text-proof-gray-900 mb-4">
+                Deep Dive: Choice-Based Conjoint (CBC)
+              </h3>
+              <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+                The foundational methodology that established conjoint analysis as the gold standard for understanding customer preferences and trade-off decisions.
+              </p>
+            </div>
+
+            {/* CBC Image and Card Side by Side */}
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+              {/* CBC Process Image */}
+              <div className="order-2 lg:order-1">
+                <img 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/5XKP-eIQOMd_uYIE1mnId/image.png"
+                  alt="The Choice-Based Conjoint Interview Flow"
+                  className="w-full rounded-2xl shadow-2xl border border-proof-gray-200"
+                />
+              </div>
+
+              {/* Enhanced CBC Card */}
+              <div className="order-1 lg:order-2">
+                <Card className="p-8 bg-gradient-to-br from-proof-blue-50 to-proof-teal-50 border-l-4 border-l-proof-blue-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-proof-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Target className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-proof-gray-900 mb-2 text-xl">Choice-Based Conjoint (CBC)</h4>
+                      <p className="text-proof-gray-700 leading-relaxed">
+                        The foundational conjoint methodology that presents respondents with systematic choice tasks 
+                        to reveal underlying preferences and utility values. CBC provides robust statistical modeling 
+                        of customer decision-making through carefully designed experimental frameworks that mirror 
+                        real-world purchase scenarios.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <CheckCircle className="h-4 w-4 text-proof-blue-500 mr-2" />
+                        Key Advantages
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Well-established statistical foundation</li>
+                        <li>• Cost-effective for straightforward studies</li>
+                        <li>• Fast field execution and analysis</li>
+                        <li>• Reliable utility estimation</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <Target className="h-4 w-4 text-proof-blue-500 mr-2" />
+                        Best Applications
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Simple to moderate product complexity</li>
+                        <li>• Basic feature and pricing optimization</li>
+                        <li>• Market share prediction modeling</li>
+                        <li>• Foundational preference research</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+          
+          {/* Expanded ACBC Section with Image and Pros/Cons */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl lg:text-3xl font-bold text-proof-gray-900 mb-4">
+                Deep Dive: Adaptive Choice-Based Conjoint (ACBC)
+              </h3>
+              <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+                Our flagship methodology that revolutionizes traditional conjoint analysis through intelligent adaptation and personalized questioning.
+              </p>
+            </div>
+
+            {/* ACBC Image and Card Side by Side */}
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+              {/* Enhanced ACBC Card */}
+              <div className="order-1 lg:order-1">
+                <Card className="p-8 bg-gradient-to-br from-proof-emerald-50 to-proof-blue-50 border-l-4 border-l-proof-emerald-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-proof-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Settings className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-proof-gray-900 mb-2 text-xl">Adaptive Choice-Based Conjoint (ACBC)</h4>
+                      <p className="text-proof-gray-700 leading-relaxed">
+                        ACBC represents the evolution of conjoint analysis, using sophisticated algorithms to adapt questions 
+                        in real-time based on individual respondent preferences. This creates a more engaging experience 
+                        while delivering superior data quality and actionable insights.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <CheckCircle className="h-4 w-4 text-proof-emerald-500 mr-2" />
+                        Key Advantages
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Personalized questioning reduces respondent fatigue</li>
+                        <li>• Higher data quality through adaptive algorithms</li>
+                        <li>• Better handling of complex product configurations</li>
+                        <li>• More realistic choice scenarios</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <Target className="h-4 w-4 text-proof-emerald-500 mr-2" />
+                        Best Applications
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Complex products with many attributes</li>
+                        <li>• High-involvement purchase decisions</li>
+                        <li>• B2B product configuration and pricing</li>
+                        <li>• Premium consumer goods optimization</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* ACBC Process Image */}
+              <div className="order-2 lg:order-2">
+                <img 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/Ja0r8Gi8aaLUQdwUdZozg/image.png"
+                  alt="The Adaptive Choice-Based Conjoint Interview Flow"
+                  className="w-full rounded-2xl shadow-2xl border border-proof-gray-200"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Expanded MBC Section with Image and Details */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl lg:text-3xl font-bold text-proof-gray-900 mb-4">
+                Deep Dive: Menu-Based Conjoint (MBC)
+              </h3>
+              <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
+                A streamlined approach that mirrors real-world shopping experiences, making complex trade-off decisions intuitive and engaging for respondents.
+              </p>
+            </div>
+
+            {/* MBC Image and Card Side by Side */}
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+              {/* MBC Process Image */}
+              <div className="order-2 lg:order-1">
+                <img 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/3dyMMkB_xl5J6UkUwNxfM/image.png"
+                  alt="The Menu-Based Conjoint Interview Flow"
+                  className="w-full rounded-2xl shadow-2xl border border-proof-gray-200"
+                />
+              </div>
+
+              {/* Enhanced MBC Card */}
+              <div className="order-1 lg:order-2">
+                <Card className="p-8 bg-gradient-to-br from-purple-50 to-pink-50 border-l-4 border-l-purple-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4 mb-6">
+                    <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Activity className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-proof-gray-900 mb-2 text-xl">Menu-Based Conjoint (MBC)</h4>
+                      <p className="text-proof-gray-700 leading-relaxed">
+                        MBC presents respondents with familiar menu-style interfaces where they can select items 
+                        and see real-time price calculations. This approach is particularly effective for service 
+                        industries, bundled offerings, and scenarios where customers naturally think in terms of 
+                        "building" their ideal solution from available options.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <CheckCircle className="h-4 w-4 text-purple-500 mr-2" />
+                        Key Advantages
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Intuitive menu-style shopping experience</li>
+                        <li>• Real-time price feedback and transparency</li>
+                        <li>• Excellent for service and bundling scenarios</li>
+                        <li>• Natural decision-making process</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg p-4 border border-proof-gray-200">
+                      <h5 className="font-semibold text-proof-gray-900 mb-2 flex items-center">
+                        <Target className="h-4 w-4 text-purple-500 mr-2" />
+                        Best Applications
+                      </h5>
+                      <ul className="text-sm text-proof-gray-600 space-y-1">
+                        <li>• Restaurant and food service optimization</li>
+                        <li>• Software feature and pricing packages</li>
+                        <li>• Insurance and financial service bundles</li>
+                        <li>• Subscription and membership tiers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+          
+          {/* Conjoint Methodology Comparison: Pros & Cons */}
+          <div className="bg-white rounded-2xl p-8 border border-proof-gray-200 shadow-lg mb-16">
+            <h3 className="text-2xl font-bold text-proof-gray-900 mb-8 text-center">
+              Conjoint Methodology Comparison: Pros & Cons
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Traditional CBC */}
+              <div className="bg-white rounded-lg p-6 shadow-lg border border-proof-gray-200">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-proof-blue-600 rounded-lg flex items-center justify-center mr-3">
+                    <Target className="h-4 w-4 text-white" />
+                  </div>
+                  <h5 className="font-bold text-proof-gray-900">Traditional CBC</h5>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h6 className="font-semibold text-proof-emerald-700 mb-2 flex items-center">
+                      <CheckCircle className="h-4 w-4 mr-1" />
+                      Pros
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Well-established methodology</li>
+                      <li>• Cost-effective for simple studies</li>
+                      <li>• Fast field execution</li>
+                      <li>• Straightforward analysis</li>
+                      <li>• Good for basic trade-off analysis</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h6 className="font-semibold text-red-700 mb-2 flex items-center">
+                      <span className="w-4 h-4 mr-1 text-red-500">✗</span>
+                      Cons
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Higher respondent fatigue</li>
+                      <li>• Less realistic choice scenarios</li>
+                      <li>• Limited handling of complex products</li>
+                      <li>• No adaptation to preferences</li>
+                      <li>• May miss important interactions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* ACBC */}
+              <div className="bg-white rounded-lg p-6 shadow-lg border border-proof-gray-200">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-proof-emerald-600 rounded-lg flex items-center justify-center mr-3">
+                    <Settings className="h-4 w-4 text-white" />
+                  </div>
+                  <h5 className="font-bold text-proof-gray-900">ACBC</h5>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h6 className="font-semibold text-proof-emerald-700 mb-2 flex items-center">
+                      <CheckCircle className="h-4 w-4 mr-1" />
+                      Pros
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Adaptive, personalized questioning</li>
+                      <li>• Superior data quality</li>
+                      <li>• Handles complex products well</li>
+                      <li>• Realistic choice scenarios</li>
+                      <li>• Lower respondent fatigue</li>
+                      <li>• Better predictive accuracy</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h6 className="font-semibold text-red-700 mb-2 flex items-center">
+                      <span className="w-4 h-4 mr-1 text-red-500">✗</span>
+                      Cons
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Higher initial investment</li>
+                      <li>• Longer setup time</li>
+                      <li>• Requires specialized expertise</li>
+                      <li>• More complex analysis</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Menu-Based Conjoint */}
+              <div className="bg-white rounded-lg p-6 shadow-lg border border-proof-gray-200">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
+                    <Activity className="h-4 w-4 text-white" />
+                  </div>
+                  <h5 className="font-bold text-proof-gray-900">Menu-Based</h5>
+                </div>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h6 className="font-semibold text-proof-emerald-700 mb-2 flex items-center">
+                      <CheckCircle className="h-4 w-4 mr-1" />
+                      Pros
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Intuitive menu-style interface</li>
+                      <li>• Good for service industries</li>
+                      <li>• Familiar shopping experience</li>
+                      <li>• Handles bundling well</li>
+                      <li>• Moderate complexity</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h6 className="font-semibold text-red-700 mb-2 flex items-center">
+                      <span className="w-4 h-4 mr-1 text-red-500">✗</span>
+                      Cons
+                    </h6>
+                    <ul className="text-sm text-proof-gray-600 space-y-1">
+                      <li>• Limited to menu-style products</li>
+                      <li>• Less statistical efficiency</li>
+                      <li>• Potential order effects</li>
+                      <li>• May oversimplify choices</li>
+                      <li>• Limited market simulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-proof-gray-600 mb-4">
+                <strong>Need help choosing the right methodology?</strong> Our research experts will recommend the optimal approach based on your specific objectives, product complexity, and budget.
+              </p>
+              <Link href="/contact">
+                <Button className="bg-proof-emerald-600 hover:bg-proof-emerald-700 text-white px-6 py-3 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Brain className="w-4 h-4 mr-2" />
+                  Get Methodology Recommendation
+                </Button>
+              </Link>
+            </div>
           </div>
           
           {/* Guidance Note - Full Width */}
@@ -471,13 +830,15 @@ export default function ConjointACBCPage() {
             that reveal customer choice drivers and optimize your product strategy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <Brain className="w-5 h-5 mr-2" />
-              Start Choice Analysis
+            <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+              <a href="/contact">
+                <Brain className="w-5 h-5 mr-2" />Start Conjoint Analysis</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
-              <PieChart className="w-5 h-5 mr-2" />
-              View Success Stories
+            <Button asChild size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+              <a href="/resources/case-studies">
+                <PieChart className="w-5 h-5 mr-2" />
+                View Success Stories
+              </a>
             </Button>
           </div>
         </div>
@@ -485,3 +846,6 @@ export default function ConjointACBCPage() {
     </div>
   );
 }
+
+
+

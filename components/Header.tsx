@@ -1,4 +1,8 @@
 
+
+
+
+
 "use client"
 
 import Link from 'next/link'
@@ -17,6 +21,9 @@ export default function Header() {
     {
       label: 'About PROOF',
       href: '/about',
+      subItems: [
+        { label: 'Privacy Policy', href: '/privacy' },
+      ]
     },
     {
       label: 'Solutions',
@@ -36,12 +43,12 @@ export default function Header() {
           label: 'Innovation and Growth', 
           href: '/solutions/innovation-growth',
           subItems: [
-            { label: 'Concept testing', href: '/solutions/innovation-growth/concept-testing' },
-            { label: 'Package testing', href: '/solutions/innovation-growth/package-testing' },
-            { label: 'Name testing', href: '/solutions/innovation-growth/name-testing' },
-            { label: 'Product testing', href: '/solutions/innovation-growth/product-testing' },
-            { label: 'Feature / Benefit testing', href: '/solutions/innovation-growth/feature-benefit-testing' },
-            { label: 'Pricing', href: '/solutions/innovation-growth/pricing' },
+            { label: 'Concept Testing', href: '/solutions/innovation-growth/concept-testing' },
+            { label: 'Package Testing', href: '/solutions/innovation-growth/package-testing' },
+            { label: 'Name Testing', href: '/solutions/innovation-growth/name-testing' },
+            { label: 'Product Testing', href: '/solutions/innovation-growth/product-testing' },
+            { label: 'Feature & Benefit Testing', href: '/solutions/innovation-growth/feature-benefit-testing' },
+            { label: 'Pricing and Price Optimization', href: '/solutions/innovation-growth/pricing' },
           ]
         },
         { 
@@ -87,10 +94,10 @@ export default function Header() {
       href: '/methodologies',
       subItems: [
         { 
-          label: 'Features / Concepts and Price Optimization', 
+          label: 'Features and Concept Optimization', 
           href: '/methodologies/features-concepts-price-optimization',
           subItems: [
-            { label: 'Conjoint and ACBC', href: '/methodologies/conjoint-and-acbc' },
+            { label: 'Conjoint Analysis', href: '/methodologies/conjoint-and-acbc' },
             { label: 'Max Diff Scaling and Qsort', href: '/methodologies/max-diff-scaling' },
             { label: 'Kano Analysis', href: '/methodologies/kano-analysis' },
             { label: 'TURF Analysis', href: '/methodologies/turf-analysis' },
@@ -115,15 +122,17 @@ export default function Header() {
             { label: 'Multi-Dimensional Scaling', href: '/methodologies/multi-dimensional-scaling' },
             { label: 'Structural Equation Modeling (SEM)', href: '/methodologies/structural-equation-modeling' },
             { label: 'Importance-Performance and NPS Score', href: '/methodologies/importance-performance-nps' },
+            { label: 'Expectancy Analysis', href: '/methodologies/expectancy-analysis' },
           ]
         },
         { 
           label: 'Price Optimization', 
-          href: '/methodologies/price-optimization',
+          href: '/solutions/innovation-growth/pricing',
           subItems: [
-            { label: 'Price Laddering', href: '/methodologies/price-laddering' },
+            { label: 'Conjoint Analysis', href: '/methodologies/conjoint-and-acbc' },
             { label: 'Van Westendorp', href: '/methodologies/van-westendorp' },
-            { label: 'Conjoint and ACBC', href: '/methodologies/conjoint-and-acbc' },
+            { label: 'Gabor Granger Price Wheel', href: '/methodologies/gabor-granger' },
+            
           ]
         },
       ]
@@ -388,3 +397,13 @@ export default function Header() {
     </header>
   )
 }
+
+
+
+
+
+
+
+
+
+

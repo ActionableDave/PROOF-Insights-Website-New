@@ -32,8 +32,15 @@ export default function KanoAnalysisPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-proof-amber-50 to-proof-emerald-50 py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24" style={{
+        backgroundImage: 'url(https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/a-WrSAh5R-L45vetxdTba/kano-method.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        {/* White overlay */}
+        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
             <Badge className="bg-proof-amber-100 text-proof-amber-700 border-proof-amber-200 hover:bg-proof-amber-100">
               <Star className="w-4 h-4 mr-1" />
@@ -41,9 +48,9 @@ export default function KanoAnalysisPage() {
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
               Kano Analysis
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-amber-600 to-proof-emerald-600 block leading-[1.2]">Methodology</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-amber-600 to-proof-emerald-600 block leading-[1.2]"><br /></span>
             </h1>
-            <p className="text-xl text-proof-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Categorize product features into Must-Have, Performance, and Delight attributes 
               to understand customer satisfaction drivers and create compelling value propositions.
             </p>
@@ -55,9 +62,9 @@ export default function KanoAnalysisPage() {
                 </Button>
               </Link>
               <Link href="/resources/case-studies">
-                <Button size="lg" variant="outline" className="border-proof-gray-300 text-proof-gray-700 hover:bg-proof-gray-50 px-8 py-4 text-lg">
-                  <Heart className="w-5 h-5 mr-2" />
-                  View Case Studies
+                <Button size="lg" className="bg-white text-proof-amber-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <PieChart className="w-5 h-5 mr-2" />
+                  View Case Examples
                 </Button>
               </Link>
             </div>
@@ -77,9 +84,7 @@ export default function KanoAnalysisPage() {
               Three Categories of Customer Satisfaction
             </h2>
             <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              The Kano Model categorizes product features based on their relationship to customer 
-              satisfaction, revealing which attributes are essential, which drive performance, and which create delight.
-            </p>
+              The Kano Model categorizes product features based on their relationship to customer satisfaction with a product or service, revealing which attributes are essential, which drive performance, and which create delight.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -436,7 +441,7 @@ export default function KanoAnalysisPage() {
               </Button>
             </Link>
             <Link href="/resources/case-studies">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-amber-600 px-8 py-4 text-lg">
+              <Button size="lg" className="bg-white text-proof-amber-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
                 <PieChart className="w-5 h-5 mr-2" />
                 View Case Examples
               </Button>
@@ -447,3 +452,6 @@ export default function KanoAnalysisPage() {
     </div>
   );
 }
+
+
+
