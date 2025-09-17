@@ -1,5 +1,21 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -39,7 +55,7 @@ export default function PricingPage() {
         backgroundRepeat: 'no-repeat'
       }}>
         {/* White overlay */}
-        <div className="absolute inset-0 bg-white bg-opacity-65"></div>
+        <div className="absolute inset-0 bg-white bg-opacity-70"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8">
@@ -48,11 +64,8 @@ export default function PricingPage() {
               Innovation Research
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold text-proof-gray-900 leading-tight">
-              Pricing
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">
-                Research
-              </span>
-            </h1>
+              Pricing and<span className="text-transparent bg-clip-text bg-gradient-to-r from-proof-blue-600 to-proof-emerald-600 block leading-[1.2]">
+                Price Optimization</span></h1>
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Set optimal prices that maximize revenue and market penetration. Our pricing research reveals 
               price sensitivity, optimal price points, and competitive positioning to drive profitability.
@@ -72,81 +85,6 @@ export default function PricingPage() {
       {/* Pricing Methods */}
       <section className="py-20 bg-proof-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 px-4 py-2">
-              <Calculator className="h-4 w-4 mr-2" />
-              Pricing Methodologies
-            </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-proof-gray-900">
-              Comprehensive Pricing Research Methods
-            </h2>
-            <p className="text-lg text-proof-gray-600 max-w-3xl mx-auto">
-              Our multi-method approach combines various pricing research techniques to provide 
-              robust insights for optimal pricing decisions.
-            </p>
-          </div>
-
-          {/* Van Westendorp Section */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-proof-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Scale className="h-10 w-10 text-proof-blue-600" />
-              </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-4">
-                Van Westendorp Price Sensitivity Meter
-              </h3>
-              <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
-                Price Sensitivity Meter methodology to identify acceptable price ranges and optimal price points. 
-                It is a power methodology for products or solutions that have less well-established price ranges.
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-              <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-between h-full">
-                <div className="space-y-4">
-                  <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 w-fit">
-                    <Scale className="w-4 h-4 mr-1" />
-                    Price Sensitivity Analysis
-                  </Badge>
-                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">Van Westendorp PSM</h4>
-                  <p className="text-proof-gray-600 leading-relaxed">
-                    Price Sensitivity Meter methodology to identify acceptable price ranges and optimal price points.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center text-proof-gray-700">
-                      <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Too cheap/expensive thresholds</span>
-                    </div>
-                    <div className="flex items-center text-proof-gray-700">
-                      <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Optimal price point</span>
-                    </div>
-                    <div className="flex items-center text-proof-gray-700">
-                      <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Indifference price point</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 pt-4 border-t border-proof-gray-100">
-                  <Link href="/methodologies/van-westendorp">
-                    <Button variant="outline" className="w-full text-proof-blue-600 border-proof-blue-200 hover:bg-proof-blue-50">
-                      Learn more
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              
-              <div className="relative h-full">
-                <img 
-                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/h1fdC-gP_ELzRooQt4iNw/image.png" 
-                  alt="Van Westendorp Price Sensitivity Analysis Chart"
-                  className="w-full h-full object-cover rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Conjoint Analysis Section */}
           <div className="mb-20">
             <div className="text-center mb-12">
@@ -163,25 +101,24 @@ export default function PricingPage() {
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-              <div className="relative h-full">
+            <div className="grid lg:grid-cols-3 gap-12 items-stretch">
+              <div className="relative h-full lg:col-span-2">
                 <img 
-                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/p6QHdvFwJt_25W1A00ote/image.png" 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/zCUpE_s6wgdYbpM4JahiD/image.png" 
                   alt="Conjoint Analysis Results Dashboard"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
               
-              <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-between h-full">
+              <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-between h-full lg:col-span-1">
                 <div className="space-y-4">
                   <Badge className="bg-proof-emerald-100 text-proof-emerald-700 border-proof-emerald-200 w-fit">
                     <BarChart3 className="w-4 h-4 mr-1" />
                     Feature Value Analysis
                   </Badge>
-                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">Conjoint Analysis</h4>
+                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">What is Conjoint Analysis?</h4>
                   <p className="text-proof-gray-600 leading-relaxed">
-                    Advanced trade-off analysis to understand price sensitivity in the context of product features and benefits.
-                  </p>
+                    An advanced trade-off analysis to understand price sensitivity in the context of product features and benefits.</p>
                   <div className="space-y-3">
                     <div className="flex items-center text-proof-gray-700">
                       <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
@@ -209,50 +146,51 @@ export default function PricingPage() {
             </div>
           </div>
 
-          {/* Price Laddering Section */}
+          {/* Van Westendorp Section */}
           <div className="mb-20">
             <div className="text-center mb-12">
-              <div className="w-20 h-20 bg-proof-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="h-10 w-10 text-proof-purple-600" />
+              <div className="w-20 h-20 bg-proof-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Scale className="h-10 w-10 text-proof-blue-600" />
               </div>
               <h3 className="text-3xl lg:text-4xl font-bold text-proof-gray-900 mb-4">
-                Price Laddering
+                Van Westendorp Price Sensitivity Meter
               </h3>
               <p className="text-lg text-proof-gray-600 max-w-4xl mx-auto">
-                Price laddering methodology reveals the relationship between price increases and purchase intent, 
-                helping identify optimal price points and understand customer price sensitivity thresholds.
-              </p>
+                The Van Westendorp Price Sensitivity Meter (PSM) is used to identify acceptable price ranges and optimal price points. It is a powerful methodology for products or solutions that have less well-established price ranges.</p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-12 items-stretch">
               <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-between h-full">
                 <div className="space-y-4">
-                  <Badge className="bg-proof-purple-100 text-proof-purple-700 border-proof-purple-200 w-fit">
-                    <TrendingUp className="w-4 h-4 mr-1" />
-                    Price Sensitivity Mapping
+                  <Badge className="bg-proof-blue-100 text-proof-blue-700 border-proof-blue-200 w-fit">
+                    <Scale className="w-4 h-4 mr-1" />
+                    Price Sensitivity Analysis
                   </Badge>
-                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">Price Laddering</h4>
+                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">What is Van Westendorp PSM?</h4>
                   <p className="text-proof-gray-600 leading-relaxed">
-                    Systematic approach to understanding how price changes affect purchase behavior and market demand.
-                  </p>
+                    A simple, straightforward method to gather price sentiment that centers on the respondent's perception of product value. It is expressed as a series of prices:</p>
                   <div className="space-y-3">
                     <div className="flex items-center text-proof-gray-700">
                       <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Purchase intent at price points</span>
+                      <span>Too cheap to be of good enough quality</span>
                     </div>
                     <div className="flex items-center text-proof-gray-700">
                       <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Price sensitivity thresholds</span>
+                      <span>Too expensive for its value</span>
                     </div>
                     <div className="flex items-center text-proof-gray-700">
                       <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
-                      <span>Demand curve modeling</span>
+                      <span>Optimal price point</span>
+                    </div>
+                    <div className="flex items-center text-proof-gray-700">
+                      <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
+                      <span>Indifference price point</span>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6 pt-4 border-t border-proof-gray-100">
-                  <Link href="/methodologies/price-laddering">
-                    <Button variant="outline" className="w-full text-proof-purple-600 border-proof-purple-200 hover:bg-proof-purple-50">
+                  <Link href="/methodologies/van-westendorp">
+                    <Button variant="outline" className="w-full text-proof-blue-600 border-proof-blue-200 hover:bg-proof-blue-50">
                       Learn more
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
@@ -262,8 +200,8 @@ export default function PricingPage() {
               
               <div className="relative h-full">
                 <img 
-                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/PLV_7XtVwFaPDo9Bjtvf7/gabor-granger.png" 
-                  alt="Price Laddering Analysis Chart"
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/BLl1izsgZ2sRtSvFAHMgQ/image.png" 
+                  alt="Van Westendorp Price Sensitivity Analysis Chart"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
@@ -285,17 +223,16 @@ export default function PricingPage() {
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+              <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 flex flex-col justify-between h-full">
                 <div className="space-y-4">
                   <Badge className="bg-proof-amber-100 text-proof-amber-700 border-proof-amber-200 w-fit">
                     <TrendingUp className="w-4 h-4 mr-1" />
                     Revenue Optimization
                   </Badge>
-                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">Gabor-Granger Analysis</h4>
+                  <h4 className="text-2xl lg:text-3xl font-bold text-proof-gray-900">What is Gabor-Granger?</h4>
                   <p className="text-proof-gray-600 leading-relaxed">
-                    Determines revenue and demand to identify optimal pricing that maximizes market penetration and revenue.
-                  </p>
+                    Gabor Granger determines revenue and demand to identify optimal pricing that maximizes market penetration and revenue.</p>
                   <div className="space-y-3">
                     <div className="flex items-center text-proof-gray-700">
                       <CheckCircle className="h-5 w-5 text-proof-emerald-500 mr-3 flex-shrink-0" />
@@ -311,13 +248,21 @@ export default function PricingPage() {
                     </div>
                   </div>
                 </div>
+                <div className="mt-6 pt-4 border-t border-proof-gray-100">
+                  <Link href="/methodologies/gabor-granger">
+                    <Button variant="outline" className="w-full text-proof-amber-600 border-proof-amber-200 hover:bg-proof-amber-50">
+                      Learn more
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
               
-              <div className="relative">
+              <div className="relative h-full">
                 <img 
-                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/jjdzbffced8ekhvw3oom8wsy/q9kc51zee7y9ple357s3an31/PLV_7XtVwFaPDo9Bjtvf7/gabor-granger.png" 
+                  src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/jjdzbffced8ekhvw3oom8wsy/qzjda03k524b6cd1a4tyz4pf/Quof_D10VYDAdqUA0d1ee/image.png" 
                   alt="Gabor-Granger Price Wheel Analysis"
-                  className="w-full h-auto rounded-xl shadow-lg"
+                  className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
               </div>
             </div>
@@ -441,12 +386,14 @@ export default function PricingPage() {
             enhance market penetration, and strengthen competitive positioning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-              <DollarSign className="w-5 h-5 mr-2" />
-              Start Pricing Research
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <DollarSign className="w-5 h-5 mr-2" />
+                Start Pricing Research
+              </Button>
+            </Link>
             <Link href="/resources/case-studies?methodology=Pricing">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
+              <Button size="lg" className="bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
                 <BarChart3 className="w-5 h-5 mr-2" />
                 View Pricing Case Studies
               </Button>
@@ -457,4 +404,20 @@ export default function PricingPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

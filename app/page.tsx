@@ -1,8 +1,3 @@
-
-
-
-
-
 "use client"
 
 import Header from '@/components/Header'
@@ -588,7 +583,7 @@ export default function Home() {
                         </blockquote>
                         <div className="flex items-center">
                           <div className={`w-12 h-12 ${testimonial.bgColor} rounded-full flex items-center justify-center mr-4`}>
-                            <span className={`${testimonial.textColor} font-semibold text-lg`}>{testimonial.initialital}</span>
+                            <span className={`${testimonial.textColor} font-semibold text-lg`}>{testimonial.initials}</span>
                           </div>
                           <div>
                             <p className="font-semibold text-proof-gray-900">{testimonial.name}</p>
@@ -656,7 +651,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="/resources/case-studies">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
+              <Button size="lg" className="bg-white text-proof-amber-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
                 <ArrowRight className="w-5 h-5 mr-2" />
                 View Case Studies
               </Button>
@@ -693,13 +688,6 @@ export default function Home() {
     </div>
   )
 }
-
-
-
-
-
-
-
 
 
 

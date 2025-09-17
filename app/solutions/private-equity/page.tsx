@@ -304,57 +304,7 @@ export default function PrivateEquityPage() {
 
           {/* Industry Focus Section */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="p-6">
-              <h3 className="text-xl font-bold text-proof-gray-900 mb-4">Buyer-Initiated Commercial Due Diligence</h3>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-green-600 mr-3" />
-                  <span className="text-proof-gray-700">Healthcare & Life Sciences</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-green-600 mr-3" />
-                  <span className="text-proof-gray-700">Technology & SaaS</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-green-600 mr-3" />
-                  <span className="text-proof-gray-700">Consumer Products & Retail</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-green-600 mr-3" />
-                  <span className="text-proof-gray-700">Industrial & Manufacturing</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-green-600 mr-3" />
-                  <span className="text-proof-gray-700">Financial Services</span>
-                </div>
-              </div>
-            </Card>
-            
-            <Card className="p-6">
-              <h3 className="text-xl font-bold text-proof-gray-900 mb-4">Deal Types</h3>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-blue-600 mr-3" />
-                  <span className="text-proof-gray-700">Growth Capital</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-blue-600 mr-3" />
-                  <span className="text-proof-gray-700">Buyouts (Mid-market)</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-blue-600 mr-3" />
-                  <span className="text-proof-gray-700">Platform Acquisitions</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-blue-600 mr-3" />
-                  <span className="text-proof-gray-700">Add-on Acquisitions</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-proof-blue-600 mr-3" />
-                  <span className="text-proof-gray-700">Distressed Investments</span>
-                </div>
-              </div>
-            </Card>
+            {/* Cards removed as requested */}
           </div>
 
           {/* CTA Section */}
@@ -375,3 +325,4 @@ export default function PrivateEquityPage() {
     </div>
   )
 }
+

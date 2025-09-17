@@ -315,10 +315,10 @@ export default function ConceptTestingPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow duration-300 border-proof-blue-200">
+            <Card className="bg-gradient-to-br from-solution-fit-200 to-solution-fit-100 hover:shadow-lg transition-shadow duration-300 border-solution-fit-200">
               <CardHeader className="pb-6">
-                <div className="w-16 h-16 bg-blue-200 rounded-lg flex items-center justify-center mb-4">
-                  <Target className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-solution-fit-200 rounded-lg flex items-center justify-center mb-4">
+                  <Target className="h-8 w-8 text-solution-fit-600" />
                 </div>
                 <CardTitle className="text-xl text-proof-gray-900">Solution Fit</CardTitle>
               </CardHeader>
@@ -344,10 +344,10 @@ export default function ConceptTestingPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-emerald-50 to-emerald-100 hover:shadow-lg transition-shadow duration-300 border-proof-emerald-200">
+            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-shadow duration-300 border-proof-blue-200">
               <CardHeader className="pb-6">
-                <div className="w-16 h-16 bg-emerald-200 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="h-8 w-8 text-emerald-600" />
+                <div className="w-16 h-16 bg-blue-200 rounded-lg flex items-center justify-center mb-4">
+                  <BarChart3 className="h-8 w-8 text-blue-600" />
                 </div>
                 <CardTitle className="text-xl text-proof-gray-900">Market Impact</CardTitle>
               </CardHeader>
@@ -373,10 +373,10 @@ export default function ConceptTestingPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-teal-50 to-teal-100 hover:shadow-lg transition-shadow duration-300 border-proof-teal-200">
+            <Card className="bg-gradient-to-br from-sky-50 to-sky-100 hover:shadow-lg transition-shadow duration-300 border-proof-blue-200">
               <CardHeader className="pb-6">
-                <div className="w-16 h-16 bg-teal-200 rounded-lg flex items-center justify-center mb-4">
-                  <TrendingUp className="h-8 w-8 text-teal-600" />
+                <div className="w-16 h-16 bg-sky-200 rounded-lg flex items-center justify-center mb-4">
+                  <TrendingUp className="h-8 w-8 text-sky-600" />
                 </div>
                 <CardTitle className="text-xl text-proof-gray-900">Adoption Velocity</CardTitle>
               </CardHeader>
@@ -420,13 +420,16 @@ export default function ConceptTestingPage() {
               <Search className="w-5 h-5 mr-2" />
               Start Concept Testing
             </Link>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-proof-blue-600 px-8 py-4 text-lg">
+            <Link href="/resources/case-studies" className="inline-flex items-center justify-center bg-white text-proof-blue-600 hover:bg-proof-gray-50 px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all rounded-md h-11">
               <BarChart3 className="w-5 h-5 mr-2" />
               View Testing Examples
-            </Button>
+            </Link>
           </div>
         </div>
       </section>
     </div>
   );
 }
+
+
+
